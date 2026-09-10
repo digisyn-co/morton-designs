@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="font-family:'Jost',sans-serif;color:#EAEAEA">
+<sc-if value="{{ showCta }}" hint-placeholder-val="{{ true }}">
+<section style="background:#0A0F16">
+<div style="max-width:1440px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);text-align:center">
+<h2 style="font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(42px,8vw,124px);line-height:.96;letter-spacing:-.025em;margin:0 0 clamp(32px,5vh,52px);text-transform:uppercase;color:#fff">When the matter<br>matters most.</h2>
+<p style="font-size:clamp(15px,1.15vw,17px);font-weight:300;color:rgba(234,234,234,.62);margin:0 0 clamp(40px,6vh,64px)">Speak with Morton about your legal circumstances.</p>
+<div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:center;align-items:center">
+<a href="index.html#contact" style="background:#F7F6F2;color:#0A0F16;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:20px 44px;transition:background .3s ease" style-hover="background:#fff;color:#0A0F16">Start A Conversation</a>
+<a href="index.html#contact" style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid rgba(197,179,130,.5);padding-bottom:8px" style-hover="color:#C5B382;border-bottom:1px solid #C5B382">Call Morton</a>
+</div>
+</div>
+</section>
+</sc-if>
+<footer style="background:#05070A">
+<div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,64px)"><div style="height:1px;background:rgba(197,179,130,.32)"></div></div>
+<div style="max-width:1440px;margin:0 auto;padding:clamp(40px,6vh,64px) clamp(20px,4vw,64px) clamp(36px,5vh,56px);display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;justify-content:space-between">
+<div>
+<img src="assets/logo/morton-lockup.png" alt="Morton" style="height:44px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:16px">
+<div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(234,234,234,.4)">Family and Criminal Law</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start">
+<div style="display:flex;flex-wrap:wrap;gap:24px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(234,234,234,.5)">
+<a href="index.html#contact">Privacy Policy</a><a href="index.html#contact">Terms of Engagement</a><a href="index.html#contact">Accessibility</a>
+</div>
+<div style="font-size:11px;letter-spacing:.1em;color:rgba(234,234,234,.28)">&#169; 2026 Morton Law. All rights reserved.</div>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() { return { showCta: this.props.showCta ?? true }; }
+}
+</script>
+</body>
+</html>

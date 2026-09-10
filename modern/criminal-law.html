@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morton Modern — Criminal Law</title>
+<script src="js/components.js"></script>
+<script src="js/support.js"></script>
+<script src="js/morton-ui.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#06090F;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#F2B632}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #F2B632;outline-offset:3px}
+::selection{background:#F2B632;color:#06090F}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] [data-plus]{transform:rotate(45deg)}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div style="background:#06090F;color:#FFFFFF;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
+<dc-import name="site-header" hint-size="100%,66px"></dc-import>
+
+<section style="position:relative;z-index:2">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(96px,14vh,150px) clamp(18px,3vw,48px) 0;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,64px);align-items:end;min-height:min(84vh,760px)">
+<div style="padding-bottom:clamp(28px,6vh,64px)">
+<div data-rise="1" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
+<span style="width:36px;height:1px;background:#F2B632;flex:none"></span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">Matter 02 / Practice Area</span>
+</div>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(52px,10.5vw,168px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,44px)">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Criminal</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Law.</span></span>
+</h1>
+<p data-rise="1" style="font-size:clamp(16px,1.35vw,21px);line-height:1.6;color:rgba(255,255,255,.72);margin:0 0 clamp(28px,5vh,48px);max-width:40ch">Charges, bail, and trial. Prepared early, argued precisely, and explained to you in plain terms.</p>
+<div data-rise="1" style="display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center">
+<a data-cursor="open" href="contact.html" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Speak With Morton <span>&#8594;</span></a>
+<a href="#scope" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:9px" style-hover="color:#F2B632;border-color:#F2B632">What We Handle</a>
+</div>
+</div>
+<div data-parallax="1" style="position:relative;align-self:stretch;min-height:min(62vh,600px);overflow:hidden">
+<img src="assets/img/insight-stairwell.jpeg" alt="Courthouse stairwell" style="position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;display:block">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,#06090F 0%,rgba(6,9,15,.3) 24%,rgba(6,9,15,0) 58%)"></div>
+<div style="position:absolute;top:clamp(16px,3vh,32px);right:clamp(16px,2vw,28px);text-align:right;font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);line-height:2">Fig. 03<br>Stairwell / Ascent</div>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.1);margin-top:clamp(20px,4vh,40px)">
+<div style="max-width:1600px;margin:0 auto;padding:18px clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:16px 40px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)">
+<span style="color:#FFFFFF">Criminal Law</span><span>Police Interviews</span><span>Bail</span><span>Summary</span><span>Indictable</span><span>Appeals</span>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#0A1424;border-top:1px solid rgba(255,255,255,.08)">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,16vh,190px) clamp(18px,3vw,48px)">
+<h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6.4vw,104px);line-height:.94;letter-spacing:-.04em;text-transform:uppercase;margin:0;max-width:22ch">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">A charge is not</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">a conviction.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden;margin-top:.34em"><span style="display:block">What you do next</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">matters most.</span></span>
+</h2>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#F2B632;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(40px,7vh,72px) clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:20px 48px;align-items:center;justify-content:space-between">
+<div>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px">Urgent</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(22px,3vw,44px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;max-width:26ch">Arrested or asked to attend an interview?</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center">
+<a href="contact.html" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:#06090F;color:#FFFFFF;padding:19px 30px;transition:opacity .3s ease" style-hover="opacity:.85;color:#FFFFFF">Call Morton Now &#8594;</a>
+<span style="font-size:14px;font-weight:500;max-width:30ch">You are entitled to legal advice before you answer questions.</span>
+</div>
+</div>
+</section>
+
+<section id="scope" style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(40px,7vh,76px)">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">01 / Scope</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(40px,7.6vw,124px);line-height:.87;letter-spacing:-.045em;text-transform:uppercase;margin:0">What we<br>defend.</h2>
+</div>
+<p data-rise="1" style="font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:rgba(6,9,15,.7);margin:0;max-width:34ch">From a first police contact to a contested trial and, where needed, appeal.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:0 clamp(28px,4vw,72px)">
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">01</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Police interviews</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Advice before you speak, and attendance where the situation calls for it.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">02</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Bail applications</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Prepared properly the first time, with the material the court actually needs.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">03</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Summary matters</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Driving, assault, and other charges heard in the lower courts.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">04</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Indictable matters</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Serious charges run to trial, with counsel briefed early rather than late.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">05</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">White-collar &amp; regulatory</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Investigations, notices to produce, and charges arising from business conduct.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">06</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Appeals</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Review of conviction or sentence, and advice on whether an appeal is worth running.</p></div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,90px);align-items:start">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">02 / Sequence</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(32px,4.6vw,72px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0 0 clamp(32px,5vh,56px)">From charge to outcome.</h2>
+<div style="display:flex;flex-direction:column">
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">01</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">First contact</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">What has been alleged, what has been said already, and what happens in the next 48 hours.</p></div></div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">02</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">The brief</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">The prosecution material is obtained and tested line by line for what it can actually prove.</p></div></div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">03</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">Position</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">Negotiation with the prosecution, or a decision to contest, made on the evidence rather than instinct.</p></div></div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">04</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">Hearing</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">Plea or trial, with the sentencing material prepared long before the date is called.</p></div></div>
+</div>
+</div>
+<div data-rise="1" style="position:relative;overflow:hidden;aspect-ratio:4/5"><img src="assets/img/interview-room.jpeg" alt="Empty interview room" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#0A1424">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:clamp(32px,5vw,90px);align-items:start">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">03 / Questions</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,64px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0 0 20px">Asked<br>every week.</h2>
+<p data-rise="1" style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.6);margin:0;max-width:32ch">General information only. It is not advice about your matter.</p>
+</div>
+<div data-rise="1">
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">Should I answer police questions?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">Get advice first. What is said in an interview is difficult to undo, and the decision depends on facts that should be reviewed before you attend.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">Will this appear on my record?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">It depends on the charge, the outcome, and the jurisdiction. This is one of the first things we assess, because it often shapes the whole strategy.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">Can I change lawyers mid-matter?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">Yes. We review the existing file and tell you plainly what can still be changed and what cannot.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">What will it cost?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">[Fee structure to be supplied.] You receive a written costs agreement before work begins, and an update whenever the estimate changes.</p>
+</details>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F;border-top:1px solid rgba(255,255,255,.1)">
+<a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html" style="position:relative;display:block;overflow:hidden">
+<img data-bg="1" src="assets/img/family-hero.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease,transform 1.2s ease;transform:scale(1.06)">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,9,15,.94) 0%,rgba(6,9,15,.78) 45%,rgba(6,9,15,.55) 100%)"></div>
+<div style="position:relative;max-width:1600px;margin:0 auto;padding:clamp(40px,8vh,90px) clamp(18px,3vw,48px);display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center">
+<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">01</span>
+<div>
+<span data-rowtitle="1" style="display:block;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(28px,5vw,76px);line-height:.94;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Family Law</span>
+<span style="display:block;margin-top:14px;font-size:14px;color:rgba(255,255,255,.62)">Other practice area &#183; Protecting what matters.</span>
+</div>
+<span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span>
+</div>
+</a>
+</section>
+
+<dc-import name="site-footer" hint-size="100%,900px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    Promise.resolve(window.MortonUI)
+      .then(m => { this._teardown = m.initMorton({ current: 'practice' }); })
+      .catch(() => {});
+  }
+  componentWillUnmount() { if (this._teardown) this._teardown(); }
+}
+</script>
+</body>
+</html>

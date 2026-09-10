@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="font-family:'Instrument Sans',system-ui,sans-serif;color:#FFFFFF">
+
+<div data-cursor-dot="1" aria-hidden="true" style="position:fixed;top:0;left:0;z-index:200;pointer-events:none;opacity:0;transition:opacity .25s ease;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#06090F;background:#F2B632;border-radius:999px;width:84px;height:84px;display:flex;align-items:center;justify-content:center">Explore</div>
+
+<div data-grid="1" aria-hidden="true" style="position:fixed;inset:0;z-index:1;pointer-events:none;max-width:1600px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr)">
+<div style="border-left:1px solid rgba(255,255,255,.055)"></div>
+<div style="border-left:1px solid rgba(255,255,255,.055)"></div>
+<div style="border-left:1px solid rgba(255,255,255,.055)"></div>
+<div style="border-left:1px solid rgba(255,255,255,.055)"></div>
+<div style="border-left:1px solid rgba(255,255,255,.055)"></div>
+<div style="border-left:1px solid rgba(255,255,255,.055);border-right:1px solid rgba(255,255,255,.055)"></div>
+</div>
+
+<div data-progress="1" aria-hidden="true" style="position:fixed;top:0;left:0;height:2px;width:0%;background:#F2B632;z-index:120"></div>
+
+<header style="position:fixed;top:0;left:0;right:0;z-index:100">
+<div data-navbg="1" style="position:absolute;inset:0;background:rgba(6,9,15,0);backdrop-filter:blur(0px);border-bottom:1px solid rgba(255,255,255,0);transition:background .45s ease,border-color .45s ease,backdrop-filter .45s ease"></div>
+<div style="position:relative;max-width:1600px;margin:0 auto;padding:20px clamp(18px,3vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+<a href="index.html" aria-label="Morton — home" style="flex:none"><img src="assets/logo/morton-lockup.png" alt="Morton" style="height:26px;width:auto;display:block;filter:brightness(0) invert(1)"></a>
+<nav aria-label="Primary" style="display:flex;align-items:center;gap:clamp(14px,2vw,32px)">
+<a data-nav="practice" href="family-law.html" style="display:flex;align-items:baseline;gap:7px;font-size:12px;font-weight:500;letter-spacing:.04em"><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;color:#F2B632;letter-spacing:.1em">01</span>Practice</a>
+<a data-nav="approach" href="index.html#method" style="display:flex;align-items:baseline;gap:7px;font-size:12px;font-weight:500;letter-spacing:.04em"><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;color:#F2B632;letter-spacing:.1em">02</span>Approach</a>
+<a data-nav="people" href="profile.html" style="display:flex;align-items:baseline;gap:7px;font-size:12px;font-weight:500;letter-spacing:.04em"><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;color:#F2B632;letter-spacing:.1em">03</span>People</a>
+<a data-nav="insights" href="insights.html" style="display:flex;align-items:baseline;gap:7px;font-size:12px;font-weight:500;letter-spacing:.04em"><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;color:#F2B632;letter-spacing:.1em">04</span>Insights</a>
+</nav>
+<div style="display:flex;align-items:center;gap:18px;flex:none">
+<button type="button" data-menu-open="1" aria-label="Open menu" style="display:flex;flex-direction:column;gap:5px;background:transparent;border:0;padding:10px 0 10px 10px;cursor:pointer">
+<span style="display:block;width:26px;height:1.5px;background:#FFFFFF"></span>
+<span style="display:block;width:26px;height:1.5px;background:#FFFFFF"></span>
+</button>
+</div>
+</div>
+</header>
+
+<div data-menu="1" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Menu" style="position:fixed;inset:0;z-index:150;background:#06090F;display:flex;flex-direction:column;clip-path:inset(0 0 100% 0);transition:clip-path .75s cubic-bezier(.76,0,.24,1);pointer-events:none">
+<div style="max-width:1600px;width:100%;margin:0 auto;padding:20px clamp(18px,3vw,48px);display:flex;align-items:center;justify-content:space-between">
+<img src="assets/logo/morton-lockup.png" alt="" style="height:26px;width:auto;display:block;filter:brightness(0) invert(1)">
+<button type="button" data-menu-close="1" aria-label="Close menu" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:transparent;border:1px solid rgba(255,255,255,.22);color:#FFFFFF;padding:12px 20px;cursor:pointer;transition:border-color .3s ease,color .3s ease" style-hover="border-color:#F2B632;color:#F2B632">Close</button>
+</div>
+<nav aria-label="Menu" style="flex:1;max-width:1600px;width:100%;margin:0 auto;padding:0 clamp(18px,3vw,48px);display:flex;flex-direction:column;justify-content:center">
+<a data-menu-link="1" href="family-law.html" style="display:flex;align-items:baseline;gap:clamp(16px,3vw,48px);border-top:1px solid rgba(255,255,255,.12);padding:clamp(14px,2.4vh,26px) 0;transition:color .3s ease" style-hover="color:#F2B632"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632;flex:none">01</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6vw,78px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Practice Areas</span></a>
+<a data-menu-link="1" href="index.html#method" style="display:flex;align-items:baseline;gap:clamp(16px,3vw,48px);border-top:1px solid rgba(255,255,255,.12);padding:clamp(14px,2.4vh,26px) 0;transition:color .3s ease" style-hover="color:#F2B632"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632;flex:none">02</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6vw,78px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Our Approach</span></a>
+<a data-menu-link="1" href="profile.html" style="display:flex;align-items:baseline;gap:clamp(16px,3vw,48px);border-top:1px solid rgba(255,255,255,.12);padding:clamp(14px,2.4vh,26px) 0;transition:color .3s ease" style-hover="color:#F2B632"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632;flex:none">03</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6vw,78px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Our People</span></a>
+<a data-menu-link="1" href="insights.html" style="display:flex;align-items:baseline;gap:clamp(16px,3vw,48px);border-top:1px solid rgba(255,255,255,.12);padding:clamp(14px,2.4vh,26px) 0;transition:color .3s ease" style-hover="color:#F2B632"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632;flex:none">04</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6vw,78px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Insights</span></a>
+<a data-menu-link="1" href="contact.html" style="display:flex;align-items:baseline;gap:clamp(16px,3vw,48px);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);padding:clamp(14px,2.4vh,26px) 0;transition:color .3s ease" style-hover="color:#F2B632"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632;flex:none">05</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6vw,78px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase">Contact</span></a>
+</nav>
+<div style="max-width:1600px;width:100%;margin:0 auto;padding:clamp(20px,4vh,44px) clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.55)">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase">Family &amp; Criminal Law</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px"><span>[Phone]</span><span>[Email]</span><span>[City]</span></div>
+</div>
+</div>
+
+</div>
+</x-dc>
+</body>
+</html>

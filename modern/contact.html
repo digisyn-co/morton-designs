@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morton Modern — Contact</title>
+<script src="js/components.js"></script>
+<script src="js/support.js"></script>
+<script src="js/morton-ui.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#06090F;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#F2B632}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #F2B632;outline-offset:3px}
+::selection{background:#F2B632;color:#06090F}
+input,textarea,select{font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.35)}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div style="background:#06090F;color:#FFFFFF;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
+<dc-import name="site-header" hint-size="100%,66px"></dc-import>
+
+<section style="position:relative;z-index:2">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(110px,17vh,190px) clamp(18px,3vw,48px) clamp(50px,8vh,90px)">
+<div data-rise="1" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
+<span style="width:36px;height:1px;background:#F2B632;flex:none"></span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">05 / Contact</span>
+</div>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,9.4vw,152px);line-height:.87;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,44px);max-width:20ch">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Let's talk</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">about what</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">comes next.</span></span>
+</h1>
+<p data-rise="1" style="font-size:clamp(16px,1.35vw,21px);line-height:1.6;color:rgba(255,255,255,.72);margin:0;max-width:46ch">Tell us as much or as little as you want. The first conversation is confidential and carries no obligation to proceed.</p>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#F2B632;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(28px,4.6vh,48px) clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between">
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(16px,1.8vw,26px);letter-spacing:-.02em;text-transform:uppercase">In custody, or being interviewed right now?</div>
+<a href="contact.html" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:#06090F;color:#FFFFFF;padding:17px 28px;transition:opacity .3s ease" style-hover="opacity:.85;color:#FFFFFF">Call [Phone Number] &#8594;</a>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(60px,10vh,120px) clamp(18px,3vw,48px) clamp(80px,14vh,170px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(36px,5vw,96px);align-items:start">
+
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(28px,5vh,48px)">Enquiry</div>
+<form data-form="1" style="display:grid;grid-template-columns:1fr 1fr;gap:28px 32px">
+<div style="display:flex;flex-direction:column;gap:9px"><label for="c-name" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Name</label><input id="c-name" type="text" autocomplete="name" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:10px 0;outline:none"></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="c-email" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Email</label><input id="c-email" type="email" autocomplete="email" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:10px 0;outline:none"></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="c-phone" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Phone</label><input id="c-phone" type="tel" autocomplete="tel" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:10px 0;outline:none"></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="c-matter" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Matter</label><select id="c-matter" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:10px 0;outline:none"><option style="color:#06090F">Family law</option><option style="color:#06090F">Criminal law</option><option style="color:#06090F">Both</option><option style="color:#06090F">Not sure yet</option></select></div>
+<div style="display:flex;flex-direction:column;gap:9px;grid-column:1 / -1"><label for="c-urgency" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Urgency</label><select id="c-urgency" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:10px 0;outline:none"><option style="color:#06090F">Immediate &#8212; today</option><option style="color:#06090F">This week</option><option style="color:#06090F">Planning ahead</option></select></div>
+<div style="display:flex;flex-direction:column;gap:9px;grid-column:1 / -1"><label for="c-msg" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Message</label><textarea id="c-msg" rows="4" placeholder="A short summary is enough. Do not include anything you would not want in writing." style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:10px 0;outline:none;resize:vertical"></textarea></div>
+<div style="grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;margin-top:16px">
+<button type="submit" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;border:0;padding:19px 30px;cursor:pointer;transition:background .3s ease" style-hover="background:#FFFFFF">Submit Enquiry <span>&#8594;</span></button>
+<p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,.5);margin:0;max-width:38ch">Read by a solicitor, not a call centre. Sending this does not create a solicitor-client relationship.</p>
+</div>
+</form>
+<div data-sent="1" role="status" style="display:none">
+<div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(26px,3.4vw,52px);line-height:1;letter-spacing:-.035em;text-transform:uppercase;color:#F2B632;margin-bottom:18px">Received.</div>
+<p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,.72);margin:0;max-width:44ch">A solicitor will respond within one business day. If the matter is urgent, call rather than wait.</p>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:clamp(28px,4.4vh,44px)">
+<div data-rise="1" style="position:relative;overflow:hidden;aspect-ratio:4/3"><img src="assets/img/city-night.jpeg" alt="Civic building at night" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+<div data-rise="1">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Direct</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.02em">[Phone number]</div>
+</div>
+<div data-rise="1">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Email</div>
+<div style="font-size:16px;color:rgba(255,255,255,.82)">[Email address]</div>
+</div>
+<div data-rise="1">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Office</div>
+<div style="font-size:16px;line-height:1.75;color:rgba(255,255,255,.82)">[Address line 1]<br>[Address line 2]<br>[City, postcode]</div>
+</div>
+<div data-rise="1">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Hours</div>
+<div style="font-size:16px;line-height:1.75;color:rgba(255,255,255,.82)">[Weekdays, hours]<br>After hours by arrangement</div>
+</div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding-top:20px">
+<p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.55);margin:0">If you are in immediate danger, contact emergency services first.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(70px,12vh,150px) clamp(18px,3vw,48px)">
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(32px,5vh,56px)">What Happens After You Send It</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0 clamp(28px,4vw,72px)">
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">01</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Conflict check</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">A short check that we are able to act for you before anything else happens.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">02</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">A call back</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">Within one business day, or sooner where the matter is urgent.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">03</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Conference booked</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">In person or by video, with a list of what to bring sent beforehand.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">04</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Costs in writing</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">No work begins until you have a written costs agreement and have accepted it.</p></div>
+</div>
+</div>
+</section>
+
+<dc-import name="site-footer" show-cta="{{ false }}" hint-size="100%,600px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    Promise.resolve(window.MortonUI)
+      .then(m => { this._teardown = m.initMorton({ current: 'contact' }); })
+      .catch(() => {});
+  }
+  componentWillUnmount() { if (this._teardown) this._teardown(); }
+}
+</script>
+</body>
+</html>

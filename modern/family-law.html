@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morton Modern — Family Law</title>
+<script src="js/components.js"></script>
+<script src="js/support.js"></script>
+<script src="js/morton-ui.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#06090F;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#F2B632}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #F2B632;outline-offset:3px}
+::selection{background:#F2B632;color:#06090F}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] [data-plus]{transform:rotate(45deg)}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div style="background:#06090F;color:#FFFFFF;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
+<dc-import name="site-header" hint-size="100%,66px"></dc-import>
+
+<section style="position:relative;z-index:2">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(96px,14vh,150px) clamp(18px,3vw,48px) 0;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,64px);align-items:end;min-height:min(84vh,760px)">
+<div style="padding-bottom:clamp(28px,6vh,64px)">
+<div data-rise="1" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
+<span style="width:36px;height:1px;background:#F2B632;flex:none"></span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">Matter 01 / Practice Area</span>
+</div>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(52px,10.5vw,168px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,44px)">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Family</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Law.</span></span>
+</h1>
+<p data-rise="1" style="font-size:clamp(16px,1.35vw,21px);line-height:1.6;color:rgba(255,255,255,.72);margin:0 0 clamp(28px,5vh,48px);max-width:40ch">Separation, property, and parenting matters, run with the preparation usually reserved for trial.</p>
+<div data-rise="1" style="display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center">
+<a data-cursor="open" href="contact.html" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Speak With Morton <span>&#8594;</span></a>
+<a href="#scope" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:9px" style-hover="color:#F2B632;border-color:#F2B632">What We Handle</a>
+</div>
+</div>
+<div data-parallax="1" style="position:relative;align-self:stretch;min-height:min(62vh,600px);overflow:hidden">
+<img src="assets/img/family-panel.jpeg" alt="Morning light across bare floorboards" style="position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;display:block">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,#06090F 0%,rgba(6,9,15,.3) 24%,rgba(6,9,15,0) 58%)"></div>
+<div style="position:absolute;top:clamp(16px,3vh,32px);right:clamp(16px,2vw,28px);text-align:right;font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);line-height:2">Fig. 02<br>Interior / Daylight</div>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.1);margin-top:clamp(20px,4vh,40px)">
+<div style="max-width:1600px;margin:0 auto;padding:18px clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:16px 40px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)">
+<span style="color:#FFFFFF">Family Law</span><span>Separation</span><span>Property</span><span>Parenting</span><span>Urgent Applications</span>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#0A1424;border-top:1px solid rgba(255,255,255,.08)">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,16vh,190px) clamp(18px,3vw,48px)">
+<h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,6.4vw,104px);line-height:.94;letter-spacing:-.04em;text-transform:uppercase;margin:0;max-width:22ch">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">Family matters are</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">decided once.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden;margin-top:.34em"><span style="display:block">You live with them</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">for years.</span></span>
+</h2>
+</div>
+</section>
+
+<section id="scope" style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(40px,7vh,76px)">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">01 / Scope</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(40px,7.6vw,124px);line-height:.87;letter-spacing:-.045em;text-transform:uppercase;margin:0">What we<br>handle.</h2>
+</div>
+<p data-rise="1" style="font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:rgba(6,9,15,.7);margin:0;max-width:34ch">Six of the matters that come through the door most often. If yours is not here, it is still worth a call.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:0 clamp(28px,4vw,72px)">
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">01</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Separation &amp; divorce</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Timing, disclosure obligations, and the practical steps that follow the decision to separate.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">02</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Property settlement</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Identifying and valuing the asset pool, including trusts, companies, and superannuation.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">03</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Parenting arrangements</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Care schedules, relocation, and disputes that cannot be agreed between parents.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">04</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Agreements &amp; consent orders</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Binding financial agreements and consent orders drafted to withstand later challenge.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">05</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Urgent applications</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Injunctions and interim orders where assets, children, or safety are at immediate risk.</p></div>
+<div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:16px">06</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,25px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Intervention orders</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:32ch">Applications and responses, including matters running alongside criminal proceedings.</p></div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,90px);align-items:start">
+<div data-rise="1" style="position:relative;overflow:hidden;aspect-ratio:4/5"><img src="assets/img/family-detail.jpeg" alt="Pen and paper on a desk" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">02 / Sequence</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(32px,4.6vw,72px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0 0 clamp(32px,5vh,56px)">How a matter runs.</h2>
+<div style="display:flex;flex-direction:column">
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">01</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">Initial conference</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">A full picture of the relationship, the assets, and the children before any advice is given.</p></div></div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">02</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">Disclosure &amp; valuation</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">Financial disclosure is exchanged and the pool is established on independent evidence.</p></div></div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">03</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">Negotiation or mediation</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">Most matters resolve here. We prepare as though they will not.</p></div></div>
+<div data-rise="1" style="border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);padding:clamp(20px,3vh,30px) 0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:clamp(14px,2vw,32px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">04</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 10px">Proceedings</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:46ch">Where agreement is not possible, the matter is run to final hearing with counsel briefed early.</p></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#0A1424">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:clamp(32px,5vw,90px);align-items:start">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">03 / Questions</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,64px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0 0 20px">Asked<br>every week.</h2>
+<p data-rise="1" style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.6);margin:0;max-width:32ch">General information only. It is not advice about your matter.</p>
+</div>
+<div data-rise="1">
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">Do we have to go to court?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">Most matters settle without a final hearing. Court is one option among several, and the decision to file is a strategic one made with you rather than a default.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">How long does a property settlement take?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">It depends on the complexity of the asset pool and whether disclosure is provided cooperatively. We give an estimated range at the first conference and revise it as the matter develops.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">What will it cost?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">[Fee structure to be supplied.] You receive a written costs agreement before work begins, and an update whenever the estimate changes.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">Can you act if my matter is already on foot?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">Yes. Taking over a matter mid-stream is common. We review the file, identify what has been missed, and tell you plainly what can still be changed.</p>
+</details>
+<details style="border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)">
+<summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(20px,3vh,28px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.5vw,22px);letter-spacing:-.015em">Is the first conversation confidential?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary>
+<p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(20px,3vh,28px);max-width:60ch">Yes, and it carries no obligation to proceed.</p>
+</details>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F;border-top:1px solid rgba(255,255,255,.1)">
+<a data-row="1" data-bgkey="1" data-cursor="explore" href="criminal-law.html" style="position:relative;display:block;overflow:hidden">
+<img data-bg="1" src="assets/img/criminal-panel.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease,transform 1.2s ease;transform:scale(1.06)">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,9,15,.94) 0%,rgba(6,9,15,.78) 45%,rgba(6,9,15,.55) 100%)"></div>
+<div style="position:relative;max-width:1600px;margin:0 auto;padding:clamp(40px,8vh,90px) clamp(18px,3vw,48px);display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center">
+<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">02</span>
+<div>
+<span data-rowtitle="1" style="display:block;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(28px,5vw,76px);line-height:.94;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Criminal Law</span>
+<span style="display:block;margin-top:14px;font-size:14px;color:rgba(255,255,255,.62)">Next practice area &#183; Defending your position.</span>
+</div>
+<span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span>
+</div>
+</a>
+</section>
+
+<section style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(70px,12vh,150px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(32px,5vh,60px)">
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,5vw,76px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0">Related<br>insights.</h2>
+<a data-rise="1" href="insights.html" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(6,9,15,.3);padding-bottom:8px;color:#06090F" style-hover="color:#8A6410;border-color:#8A6410">All Insights &#8594;</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3vw,48px)">
+<a data-article="1" data-cursor="read" href="article.html" style="display:block;color:#06090F">
+<div style="position:relative;overflow:hidden;aspect-ratio:4/3;margin-bottom:22px"><img src="assets/img/insight-keys.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)"></div>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#8A6410;margin-bottom:14px">Family Law &#183; 4 Min</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">What to expect when beginning a family law matter</h3>
+</a>
+<a data-article="1" data-cursor="read" href="article.html" style="display:block;color:#06090F">
+<div style="position:relative;overflow:hidden;aspect-ratio:4/3;margin-bottom:22px"><img src="assets/img/insight-folders.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)"></div>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#8A6410;margin-bottom:14px">Family Law &#183; 6 Min</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">Disclosure obligations, and what happens when they are ignored</h3>
+</a>
+<a data-article="1" data-cursor="read" href="article.html" style="display:block;color:#06090F">
+<div style="position:relative;overflow:hidden;aspect-ratio:4/3;margin-bottom:22px"><img src="assets/img/insight-table.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)"></div>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#8A6410;margin-bottom:14px">Family Law &#183; 5 Min</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">Parenting arrangements in the first ninety days</h3>
+</a>
+</div>
+</div>
+</section>
+
+<dc-import name="site-footer" hint-size="100%,900px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    Promise.resolve(window.MortonUI)
+      .then(m => { this._teardown = m.initMorton({ current: 'practice' }); })
+      .catch(() => {});
+  }
+  componentWillUnmount() { if (this._teardown) this._teardown(); }
+}
+</script>
+</body>
+</html>

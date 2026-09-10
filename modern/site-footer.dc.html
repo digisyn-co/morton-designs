@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="font-family:'Instrument Sans',system-ui,sans-serif;color:#FFFFFF">
+
+<sc-if value="{{ showCta }}" hint-placeholder-val="{{ true }}">
+<section style="position:relative;z-index:2;background:#06090F;border-top:1px solid rgba(255,255,255,.14)">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(90px,16vh,190px) clamp(18px,3vw,48px)">
+<h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(48px,11vw,190px);line-height:.85;letter-spacing:-.05em;text-transform:uppercase;margin:0 0 clamp(32px,6vh,60px)">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">When it matters,</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">talk to Morton.</span></span>
+</h2>
+<div data-rise="1" style="display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center">
+<a data-cursor="open" href="contact.html" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Start A Conversation <span>&#8594;</span></a>
+<a href="contact.html" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:9px" style-hover="color:#F2B632;border-color:#F2B632">Call Morton</a>
+</div>
+</div>
+</section>
+</sc-if>
+
+<footer style="position:relative;z-index:2;background:#06090F;border-top:1px solid rgba(255,255,255,.14)">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(48px,8vh,90px) clamp(18px,3vw,48px) clamp(28px,4vh,44px)">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px 48px;margin-bottom:clamp(56px,10vh,110px)">
+<div>
+<img src="assets/logo/morton-lockup.png" alt="Morton" style="height:30px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:16px">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55)">Family and Criminal Law</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Navigate</div>
+<a href="family-law.html" style="font-size:14px;color:rgba(255,255,255,.78)">Family law</a>
+<a href="criminal-law.html" style="font-size:14px;color:rgba(255,255,255,.78)">Criminal law</a>
+<a href="profile.html" style="font-size:14px;color:rgba(255,255,255,.78)">People</a>
+<a href="insights.html" style="font-size:14px;color:rgba(255,255,255,.78)">Insights</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Contact</div>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Phone number]</span>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Email address]</span>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Address]</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Legal</div>
+<a href="contact.html" style="font-size:14px;color:rgba(255,255,255,.78)">Privacy</a>
+<a href="contact.html" style="font-size:14px;color:rgba(255,255,255,.78)">Terms of engagement</a>
+<a href="contact.html" style="font-size:14px;color:rgba(255,255,255,.78)">Accessibility</a>
+</div>
+</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,7.4vw,132px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin-bottom:clamp(32px,5vh,56px)">Morton.<br><span style="color:rgba(255,255,255,.34)">Serious law.<br>Clear direction.</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:11px;color:rgba(255,255,255,.4)">
+<span>&#169; 2026 Morton. All rights reserved.</span>
+<span style="font-family:'Archivo',sans-serif;letter-spacing:.16em;text-transform:uppercase">Concept &#183; Not legal advice</span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return { showCta: this.props.showCta ?? true }; }
+}
+</script>
+</body>
+</html>

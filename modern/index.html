@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morton Modern — Home</title>
+<script src="js/components.js"></script>
+<script src="js/support.js"></script>
+<script src="js/morton-ui.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#06090F;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#F2B632}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #F2B632;outline-offset:3px}
+::selection{background:#F2B632;color:#06090F}
+input,textarea{font:inherit}
+.mtn-scroller::-webkit-scrollbar{height:2px}
+.mtn-scroller::-webkit-scrollbar-thumb{background:rgba(242,182,50,.5)}
+@keyframes mtnScroll{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(20px);opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+</style>
+</helmet>
+<div style="background:#06090F;color:#FFFFFF;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
+
+<dc-import name="site-header" hint-size="100%,66px"></dc-import>
+
+<section id="top" style="position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column">
+<div style="max-width:1600px;width:100%;margin:0 auto;padding:clamp(96px,14vh,150px) clamp(18px,3vw,48px) 0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);flex:1;align-items:end">
+<div style="padding-bottom:clamp(24px,5vh,56px)">
+<div data-rise="1" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
+<span style="width:36px;height:1px;background:#F2B632;flex:none"></span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">The Modern Law Firm</span>
+</div>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(56px,11.5vw,184px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,44px);color:#FFFFFF">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Legal</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Moves</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Fast.</span></span>
+</h1>
+<div data-rise="1" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px">
+<a data-cursor="open" href="#contact" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Start A Conversation <span>&#8594;</span></a>
+<a href="#practice" style="display:inline-flex;align-items:center;gap:12px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#FFFFFF;border-bottom:1px solid rgba(255,255,255,.28);padding:0 2px 9px;transition:border-color .3s ease" style-hover="color:#F2B632;border-color:#F2B632">Explore Practice Areas</a>
+</div>
+</div>
+<div data-parallax="1" style="position:relative;align-self:stretch;min-height:min(74vh,700px);overflow:hidden">
+<img src="assets/img/hero-column.jpeg" alt="Marble column of a courthouse portico" loading="eager" style="position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;display:block">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,#06090F 0%,rgba(6,9,15,.35) 22%,rgba(6,9,15,0) 55%)"></div>
+<div style="position:absolute;top:clamp(16px,3vh,32px);right:clamp(16px,2vw,28px);text-align:right;font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);line-height:2">Fig. 01<br>Portico / Detail</div>
+</div>
+</div>
+<div style="position:relative;border-top:1px solid rgba(255,255,255,.1);margin-top:clamp(20px,4vh,40px)">
+<div style="max-width:1600px;margin:0 auto;padding:18px clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between">
+<div style="display:flex;flex-wrap:wrap;gap:16px 40px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)">
+<span style="color:#FFFFFF">Family &amp; Criminal Law</span>
+<span>Matter 01 / Family</span>
+<span>Matter 02 / Criminal</span>
+<span>[City] &#183; [Jurisdiction]</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)">
+<span>Scroll</span>
+<span data-scrollcue="1" style="display:block;width:1px;height:22px;background:linear-gradient(180deg,#F2B632,rgba(242,182,50,0));animation:mtnScroll 1.9s ease-in-out infinite"></span>
+</div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#0A1424;border-top:1px solid rgba(255,255,255,.08)">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(90px,18vh,220px) clamp(18px,3vw,48px)">
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(28px,5vh,56px)">Statement</div>
+<h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(34px,7.4vw,124px);line-height:.94;letter-spacing:-.04em;text-transform:uppercase;margin:0;max-width:20ch">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">The legal system</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">is complex.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden;margin-top:.34em"><span style="display:block">Your advice</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">shouldn't be.</span></span>
+</h2>
+</div>
+</section>
+
+<section id="practice" style="position:relative;z-index:2;background:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,160px) clamp(18px,3vw,48px) clamp(60px,10vh,120px);display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">01 / Practice Areas</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,8.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0">Practice<br>Areas.</h2>
+</div>
+<p data-rise="1" style="font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:rgba(255,255,255,.6);margin:0;max-width:34ch">Two disciplines. One standard of preparation. Select a matter to see how we work.</p>
+</div>
+
+<div data-index="1" style="position:relative;border-top:1px solid rgba(255,255,255,.14)">
+<div data-index-bg="1" style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+<img data-bg="1" src="assets/img/family-hero.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease,transform 1.2s ease;transform:scale(1.06)">
+<img data-bg="2" src="assets/img/criminal-panel.jpeg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease,transform 1.2s ease;transform:scale(1.06)">
+<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,9,15,.94) 0%,rgba(6,9,15,.78) 45%,rgba(6,9,15,.55) 100%)"></div>
+</div>
+
+<a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(30px,6vh,64px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease">
+<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">01</span>
+<span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,5.4vw,84px);line-height:.94;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Family Law</span>
+<span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Protecting people.<br>Protecting what matters.</span>
+<span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span>
+</a>
+
+<a data-row="1" data-bgkey="2" data-cursor="explore" href="criminal-law.html" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(30px,6vh,64px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease">
+<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">02</span>
+<span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,5.4vw,84px);line-height:.94;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Criminal Law</span>
+<span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Defending your position.<br>Protecting your future.</span>
+<span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span>
+</a>
+</div>
+</section>
+
+<section id="method" style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px) clamp(36px,6vh,64px);display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">02 / Approach</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,8.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0">The<br>Morton<br>Method.</h2>
+</div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,1.7vw,26px);line-height:1.35;letter-spacing:-.01em;max-width:22ch">Clear thinking.<br>Strategic advice.<br>Decisive action.</div>
+</div>
+<div class="mtn-scroller" style="overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:clamp(18px,3vw,48px);padding-bottom:clamp(60px,10vh,120px)">
+<div style="display:flex;min-width:min-content;padding:0 clamp(18px,3vw,48px);gap:0">
+<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) clamp(20px,2.4vw,40px) 0 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span><span data-line="1" style="height:1px;flex:1;background:rgba(6,9,15,.24);transform-origin:left"></span></div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">01</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Understand</h3>
+<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">A full picture of the facts, the risk, and the outcome you actually need.</p>
+</div>
+<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) clamp(20px,2.4vw,40px) 0 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span><span data-line="1" style="height:1px;flex:1;background:rgba(6,9,15,.24);transform-origin:left"></span></div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">02</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Strategise</h3>
+<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">Options mapped against cost, time, and consequence before anything is filed.</p>
+</div>
+<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) clamp(20px,2.4vw,40px) 0 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span><span data-line="1" style="height:1px;flex:1;background:rgba(6,9,15,.24);transform-origin:left"></span></div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">03</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Act</h3>
+<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">Negotiation or advocacy, run to a plan and with counsel briefed early.</p>
+</div>
+<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) 0 0 0">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span></div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">04</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Resolve</h3>
+<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">The strongest available outcome, and a clear account of how it was reached.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px)">
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(32px,6vh,64px)">Why Morton</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:baseline;margin-bottom:clamp(28px,5vh,52px)">
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,2.6vw,42px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;color:rgba(255,255,255,.34)">Traditional Law</div>
+<div style="font-family:'Archivo',sans-serif;font-size:clamp(11px,1vw,15px);color:rgba(255,255,255,.34);letter-spacing:.1em">VS.</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,2.6vw,42px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;color:#FFFFFF">Morton</div>
+</div>
+<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Complex</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Clear</span></div>
+<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Reactive</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Strategic</span></div>
+<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Opaque</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Transparent</span></div>
+<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Slow</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Decisive</span></div>
+<p data-rise="1" style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.4);margin:clamp(20px,3vh,30px) 0 0;max-width:60ch">Positioning statements describing how this practice works. Not a claim about outcomes.</p>
+</div>
+</section>
+
+<section id="people" style="position:relative;z-index:2;background:#0A1424">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px)">
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(24px,4vh,44px)">03 / People</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(40px,7.4vw,120px);line-height:.88;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(40px,7vh,80px);max-width:16ch">The people behind the advice.</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,2.4vw,40px)">
+<a data-person="1" data-cursor="view" href="profile.html" style="display:block">
+<div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:22px">
+<img src="assets/img/standing-window.jpeg" alt="Portrait" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
+<span style="position:absolute;top:14px;left:14px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632">01</span>
+<span data-personbar="1" style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#F2B632;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)"></span>
+</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">[Name Surname]</div>
+<div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:14px">Principal Solicitor</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px">
+<span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Family Law</span>
+<span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Criminal Law</span>
+</div>
+<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632">View Profile &#8594;</span>
+</a>
+<a data-person="1" data-cursor="view" href="profile.html" style="display:block">
+<div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:22px">
+<img src="assets/img/headshot.jpeg" alt="Portrait" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
+<span style="position:absolute;top:14px;left:14px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632">02</span>
+<span data-personbar="1" style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#F2B632;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)"></span>
+</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">[Name Surname]</div>
+<div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:14px">Senior Associate</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px">
+<span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Family Law</span>
+</div>
+<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632">View Profile &#8594;</span>
+</a>
+<div data-rise="1" style="display:flex;flex-direction:column;justify-content:flex-end;border-top:1px solid rgba(255,255,255,.16);padding-top:24px">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,36px)">Trust Is Earned</div>
+<div style="display:flex;flex-direction:column">
+<div style="border-top:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Admission &#183; jurisdiction and year]</div>
+<div style="border-top:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Professional memberships]</div>
+<div style="border-top:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Accreditations]</div>
+<div style="border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Recognition]</div>
+</div>
+<p style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.4);margin:18px 0 0">Placeholders. Supply verified credentials and they replace this list.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="insights" style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(40px,7vh,80px)">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">04 / Insights</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,8.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0">Morton<br>Insights.</h2>
+</div>
+<a data-rise="1" href="insights.html" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(6,9,15,.3);padding-bottom:8px;color:#06090F" style-hover="color:#8A6410;border-color:#8A6410">All Insights &#8594;</a>
+</div>
+<a data-article="1" data-cursor="open" href="article.html" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,56px);align-items:end;border-top:1px solid rgba(6,9,15,.2);padding:clamp(28px,5vh,52px) 0;color:#06090F">
+<div>
+<div style="display:flex;gap:16px;align-items:baseline;margin-bottom:clamp(20px,3.4vh,34px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#8A6410">01</span><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(6,9,15,.55)">Family Law &#183; 4 Min</span></div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,58px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0;max-width:20ch">What to expect when beginning a family law matter</h3>
+</div>
+<div style="position:relative;overflow:hidden;aspect-ratio:16/9">
+<img src="assets/img/insight-keys.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
+</div>
+</a>
+<a data-article="1" data-cursor="open" href="article.html" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,56px);align-items:end;border-top:1px solid rgba(6,9,15,.2);border-bottom:1px solid rgba(6,9,15,.2);padding:clamp(28px,5vh,52px) 0;color:#06090F">
+<div>
+<div style="display:flex;gap:16px;align-items:baseline;margin-bottom:clamp(20px,3.4vh,34px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#8A6410">02</span><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(6,9,15,.55)">Criminal Law &#183; 5 Min</span></div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,58px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0;max-width:20ch">What to do when facing a criminal charge</h3>
+</div>
+<div style="position:relative;overflow:hidden;aspect-ratio:16/9">
+<img src="assets/img/interview-room.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
+</div>
+</a>
+</div>
+</section>
+
+<section id="contact" style="position:relative;z-index:2;background:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(90px,18vh,220px) clamp(18px,3vw,48px) clamp(70px,12vh,140px)">
+<h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(56px,13vw,224px);line-height:.84;letter-spacing:-.05em;text-transform:uppercase;margin:0 0 clamp(32px,6vh,64px)">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Ready</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">To Talk?</span></span>
+</h2>
+<div data-rise="1" style="display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-bottom:clamp(60px,10vh,120px)">
+<a data-cursor="open" href="#contact-form" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Start A Conversation <span>&#8594;</span></a>
+<a href="#contact" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:9px" style-hover="color:#F2B632;border-color:#F2B632">Call Morton</a>
+</div>
+<div id="contact-form" style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(32px,5vw,96px);border-top:1px solid rgba(255,255,255,.14);padding-top:clamp(40px,7vh,80px)">
+<div>
+<h3 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,54px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0 0 clamp(32px,5vh,56px);max-width:18ch">Let's talk about what comes next.</h3>
+<form data-form="1" style="display:grid;grid-template-columns:1fr 1fr;gap:26px 32px">
+<div style="display:flex;flex-direction:column;gap:9px"><label for="f-name" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Name</label><input id="f-name" type="text" autocomplete="name" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none"></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="f-email" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Email</label><input id="f-email" type="email" autocomplete="email" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none"></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="f-phone" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Phone</label><input id="f-phone" type="tel" autocomplete="tel" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none"></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="f-matter" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Matter</label><select id="f-matter" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-family:inherit;font-size:16px;padding:9px 0;outline:none"><option style="color:#06090F">Family law</option><option style="color:#06090F">Criminal law</option><option style="color:#06090F">Not sure yet</option></select></div>
+<div style="display:flex;flex-direction:column;gap:9px;grid-column:1 / -1"><label for="f-msg" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Message</label><textarea id="f-msg" rows="3" placeholder="As much or as little as you want to share." style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none;resize:vertical"></textarea></div>
+<div style="grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;margin-top:14px">
+<button type="submit" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;border:0;padding:19px 30px;cursor:pointer;transition:background .3s ease" style-hover="background:#FFFFFF">Submit Enquiry <span>&#8594;</span></button>
+<p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,.5);margin:0;max-width:36ch">Confidential. Read by a solicitor, not a call centre. No obligation to proceed.</p>
+</div>
+</form>
+<div data-sent="1" role="status" style="display:none;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,2vw,30px);letter-spacing:-.02em;text-transform:uppercase;color:#F2B632">Received. We'll be in touch.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:clamp(26px,4vh,42px)">
+<div style="position:relative;overflow:hidden;aspect-ratio:4/3"><img src="assets/img/city-night.jpeg" alt="Civic building at night" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Direct</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.8vw,26px);letter-spacing:-.02em">[Phone number]</div></div>
+<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Office</div><div style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.78)">[Address line 1]<br>[Address line 2]</div></div>
+<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Hours</div><div style="font-size:15px;color:rgba(255,255,255,.78)">By appointment</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="position:relative;z-index:2;background:#06090F;border-top:1px solid rgba(255,255,255,.14)">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(48px,8vh,90px) clamp(18px,3vw,48px) clamp(28px,4vh,44px)">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px 48px;margin-bottom:clamp(56px,10vh,110px)">
+<div>
+<img src="assets/logo/morton-lockup.png" alt="Morton" style="height:30px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:16px">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55)">Family and Criminal Law</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Navigate</div>
+<a href="family-law.html" style="font-size:14px;color:rgba(255,255,255,.78)">Family law</a>
+<a href="#method" style="font-size:14px;color:rgba(255,255,255,.78)">Approach</a>
+<a href="profile.html" style="font-size:14px;color:rgba(255,255,255,.78)">People</a>
+<a href="insights.html" style="font-size:14px;color:rgba(255,255,255,.78)">Insights</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Contact</div>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Phone number]</span>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Email address]</span>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Address]</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Legal</div>
+<a href="#contact" style="font-size:14px;color:rgba(255,255,255,.78)">Privacy</a>
+<a href="#contact" style="font-size:14px;color:rgba(255,255,255,.78)">Terms of engagement</a>
+<a href="#contact" style="font-size:14px;color:rgba(255,255,255,.78)">Accessibility</a>
+</div>
+</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,7.4vw,132px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin-bottom:clamp(32px,5vh,56px)">Morton.<br><span style="color:rgba(255,255,255,.34)">Serious law.<br>Clear direction.</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:11px;color:rgba(255,255,255,.4)">
+<span>&#169; 2026 Morton. All rights reserved.</span>
+<span style="font-family:'Archivo',sans-serif;letter-spacing:.16em;text-transform:uppercase">Concept &#183; Not legal advice</span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#F2B632&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#F2B632&quot;,&quot;#DFAE2B&quot;,&quot;#E8E2D4&quot;,&quot;#4F7DF3&quot;],&quot;section&quot;:&quot;Brand&quot;},&quot;gridLines&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Detail&quot;},&quot;customCursor&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Detail&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    Promise.resolve(window.MortonUI).then(m => {
+      this._teardown = m.initMorton({
+        accent: this.props.accentColor ?? '#F2B632',
+        gridLines: this.props.gridLines ?? true,
+        customCursor: this.props.customCursor ?? true
+      });
+    }).catch(() => {});
+  }
+  componentWillUnmount() { if (this._teardown) this._teardown(); }
+}
+</script>
+</body>
+</html>

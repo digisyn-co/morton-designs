@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/support.js"></script>
+</head>
+<body>
+<x-dc>
+<sc-if value="{{ isOverlay }}" hint-placeholder-val="{{ true }}">
+<header data-hdr="1" style="position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s ease,backdrop-filter .4s ease,border-color .4s ease;border-bottom:1px solid rgba(197,179,130,0);font-family:'Jost',sans-serif;color:#EAEAEA">
+<div style="max-width:1440px;margin:0 auto;padding:22px clamp(20px,4vw,64px);display:flex;align-items:center;justify-content:space-between;gap:32px">
+<a href="index.html" style="display:block;flex:none"><img src="assets/logo/morton-lockup.png" alt="Morton — Family and Criminal Law" style="height:30px;width:auto;display:block;filter:brightness(0) invert(1)"></a>
+<nav style="display:flex;gap:clamp(18px,2.6vw,40px);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(234,234,234,.78)">
+<a href="family-law.html" style="padding:4px 0">Practice Areas</a>
+<a href="index.html#approach" style="padding:4px 0">Approach</a>
+<a href="index.html#experience" style="padding:4px 0">Experience</a>
+<a href="index.html#insights" style="padding:4px 0">Insights</a>
+</nav>
+<a href="index.html#contact" style="flex:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:4px 0;border-bottom:1px solid rgba(197,179,130,.45)" style-hover="border-bottom:1px solid #C5B382;color:#C5B382">Speak With Morton</a>
+</div>
+</header>
+</sc-if>
+<sc-if value="{{ isSolid }}" hint-placeholder-val="{{ false }}">
+<header style="position:sticky;top:0;z-index:50;background:rgba(10,15,22,.88);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid rgba(197,179,130,.18);font-family:'Jost',sans-serif;color:#EAEAEA">
+<div style="max-width:1440px;margin:0 auto;padding:22px clamp(20px,4vw,64px);display:flex;align-items:center;justify-content:space-between;gap:32px">
+<a href="index.html" style="display:block;flex:none"><img src="assets/logo/morton-lockup.png" alt="Morton — Family and Criminal Law" style="height:30px;width:auto;display:block;filter:brightness(0) invert(1)"></a>
+<nav style="display:flex;gap:clamp(18px,2.6vw,40px);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(234,234,234,.78)">
+<a href="family-law.html" style="padding:4px 0">Practice Areas</a>
+<a href="index.html#approach" style="padding:4px 0">Approach</a>
+<a href="index.html#experience" style="padding:4px 0">Experience</a>
+<a href="index.html#insights" style="padding:4px 0">Insights</a>
+</nav>
+<a href="index.html#contact" style="flex:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:4px 0;border-bottom:1px solid rgba(197,179,130,.45)" style-hover="border-bottom:1px solid #C5B382;color:#C5B382">Speak With Morton</a>
+</div>
+</header>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;overlay&quot;,&quot;solid&quot;],&quot;default&quot;:&quot;overlay&quot;,&quot;tsType&quot;:&quot;'overlay' | 'solid'&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const hdr = document.querySelector('[data-hdr]');
+    if (!hdr) return;
+    const onScroll = () => {
+      const on = window.scrollY > 40;
+      hdr.style.background = on ? 'rgba(10,15,22,.82)' : 'transparent';
+      hdr.style.backdropFilter = on ? 'saturate(140%) blur(14px)' : 'none';
+      hdr.style.webkitBackdropFilter = hdr.style.backdropFilter;
+      hdr.style.borderBottomColor = on ? 'rgba(197,179,130,.18)' : 'rgba(197,179,130,0)';
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    this._onScroll = onScroll;
+  }
+  componentWillUnmount() { if (this._onScroll) window.removeEventListener('scroll', this._onScroll); }
+  renderVals() {
+    const v = this.props.variant ?? 'overlay';
+    return { isOverlay: v === 'overlay', isSolid: v !== 'overlay' };
+  }
+}
+</script>
+</body>
+</html>
