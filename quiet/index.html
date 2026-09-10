@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morton Quiet — Home</title>
+<title>Connecticut Family Law Attorney in Glastonbury — Morton Family and Criminal Law</title>
 <script src="js/components.js"></script>
 <script src="js/support.js"></script>
 <script src="js/morton-quiet-ui.js"></script>
@@ -26,6 +26,22 @@ input,textarea,select{font:inherit}
 input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 @keyframes mqLine{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+/* --- narrow screens: collapse the fixed multi-column grids --- */
+@media (max-width: 760px){
+  [style*="grid-template-columns:minmax(0,"],
+  [style*="grid-template-columns: minmax(0,"],
+  [style*="grid-template-columns:minmax(0px,"],
+  [style*="grid-template-columns: minmax(0px,"],
+  [style*="grid-template-columns:clamp("],
+  [style*="grid-template-columns: clamp("]{grid-template-columns:minmax(0,1fr) !important}
+  [style*="columns:2 "],[style*="columns: 2 "]{columns:1 !important}
+  nav[aria-label="Primary"]{display:none !important}
+  [data-desknav]{display:none !important}
+  [data-burger]{display:flex !important}
+  body{overflow-wrap:break-word}
+}
+}
 </style>
 </helmet>
 <div style="background:#F7F5F0;color:#080808;font-family:'Manrope',system-ui,sans-serif;font-weight:300;overflow-x:hidden;position:relative">
@@ -33,19 +49,13 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 <header style="position:fixed;top:0;left:0;right:0;z-index:100">
 <div data-navbg="1" style="position:absolute;inset:0;background:rgba(247,245,240,0);backdrop-filter:blur(0px);border-bottom:1px solid rgba(8,8,8,0);transition:background .5s ease,border-color .5s ease,backdrop-filter .5s ease"></div>
 <div style="position:relative;max-width:1560px;margin:0 auto;padding:26px clamp(20px,4vw,64px);display:flex;align-items:center;justify-content:space-between;gap:28px">
-<a href="#top" aria-label="Morton — home" style="flex:none"><img data-logo="1" src="assets/logo/morton-lockup.png" alt="Morton" style="height:26px;width:auto;display:block"></a>
-<nav aria-label="Primary" data-desknav="1" style="display:flex;align-items:center;gap:clamp(20px,2.4vw,40px)">
-<a href="family-law.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Practice</a>
-<a href="#approach" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Approach</a>
-<a href="profile.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">People</a>
-<a href="insights.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Insights</a>
-<a href="contact.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Contact</a>
-</nav>
+<a href="index.html" aria-label="Morton Family and Criminal Law — home" style="flex:none"><img src="assets/logo/morton-lockup.png" alt="Morton Family and Criminal Law" style="height:26px;width:auto;display:block"></a>
+<nav aria-label="Primary" data-desknav="1" style="display:flex;align-items:center;gap:clamp(14px,1.7vw,28px)"><a data-nav="practice" href="family-law.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Family Law</a><a data-nav="defense" href="criminal-law.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Family Violence</a><a data-nav="attorney" href="profile.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Attorney</a><a data-nav="area" href="service-area.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Service Area</a><a data-nav="faq" href="faq.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">FAQ</a><a data-nav="insights" href="insights.html" style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(8,8,8,.7)" style-hover="color:#080808">Insights</a></nav>
 <div style="display:flex;align-items:center;gap:20px;flex:none">
 <a data-navcta="1" href="contact.html" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(201,162,74,.55);padding-bottom:6px" style-hover="color:#8A6B22;border-color:#8A6B22">Speak With Morton <span>&#8594;</span></a>
-<button type="button" data-menu-open="1" aria-label="Open menu" data-burger="1" style="display:none;flex-direction:column;gap:6px;background:transparent;border:0;padding:12px 0 12px 12px;cursor:pointer">
-<span data-bar="1" style="display:block;width:24px;height:1px;background:#080808"></span>
-<span data-bar="1" style="display:block;width:24px;height:1px;background:#080808"></span>
+<button type="button" data-menu-open="1" data-burger="1" aria-label="Open menu" style="display:none;flex-direction:column;gap:6px;background:transparent;border:0;padding:12px 0 12px 12px;cursor:pointer">
+<span style="display:block;width:24px;height:1px;background:#080808"></span>
+<span style="display:block;width:24px;height:1px;background:#080808"></span>
 </button>
 </div>
 </div>
@@ -56,32 +66,26 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 <img src="assets/logo/morton-lockup.png" alt="" style="height:26px;width:auto;display:block;filter:brightness(0) invert(1)">
 <button type="button" data-menu-close="1" aria-label="Close menu" style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.35);color:#F7F5F0;padding:0 0 6px;cursor:pointer">Close</button>
 </div>
-<nav aria-label="Menu" style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 clamp(20px,4vw,64px)">
-<a data-menu-link="1" href="family-law.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,9vw,80px);line-height:1.12;letter-spacing:-.01em;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(12px,2vh,20px) 0" style-hover="color:#C9A24A">Practice</a>
-<a data-menu-link="1" href="#approach" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,9vw,80px);line-height:1.12;letter-spacing:-.01em;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(12px,2vh,20px) 0" style-hover="color:#C9A24A">Approach</a>
-<a data-menu-link="1" href="profile.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,9vw,80px);line-height:1.12;letter-spacing:-.01em;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(12px,2vh,20px) 0" style-hover="color:#C9A24A">People</a>
-<a data-menu-link="1" href="insights.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,9vw,80px);line-height:1.12;letter-spacing:-.01em;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(12px,2vh,20px) 0" style-hover="color:#C9A24A">Insights</a>
-<a data-menu-link="1" href="contact.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,9vw,80px);line-height:1.12;letter-spacing:-.01em;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(12px,2vh,20px) 0" style-hover="color:#C9A24A">Contact</a>
-</nav>
+<nav aria-label="Menu" style="flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 clamp(20px,4vw,64px)"><a data-menu-link="1" href="family-law.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Family Law</a><a data-menu-link="1" href="criminal-law.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Family Violence Defense</a><a data-menu-link="1" href="service-area.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Service Area</a><a data-menu-link="1" href="profile.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Attorney</a><a data-menu-link="1" href="insights.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Insights</a><a data-menu-link="1" href="faq.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Frequently Asked Questions</a><a data-menu-link="1" href="contact.html" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,5.4vw,52px);line-height:1.14;border-bottom:1px solid rgba(247,245,240,.16);padding:clamp(8px,1.3vh,14px) 0" style-hover="color:#C9A24A">Contact</a></nav>
 <div style="padding:clamp(24px,4vh,48px) clamp(20px,4vw,64px);display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;font-size:12px;letter-spacing:.08em;color:rgba(247,245,240,.6)">
-<span style="letter-spacing:.18em;text-transform:uppercase">Family &amp; Criminal Law</span>
-<span>[Phone] &nbsp;&#183;&nbsp; [Email]</span>
+<span style="letter-spacing:.18em;text-transform:uppercase">Morton Family and Criminal Law, PLLC</span>
+<span>2837-A Main Street, Glastonbury, CT 06033 &nbsp;&#183;&nbsp; daniel@mfclegal.com</span>
 </div>
 </div>
 
 <section id="top" style="position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end">
 <div data-collapse="1" style="max-width:1560px;width:100%;margin:0 auto;padding:clamp(120px,20vh,220px) clamp(20px,4vw,64px) 0;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:end;flex:1">
 <div style="padding-bottom:clamp(32px,7vh,80px)">
-<div data-rise="1" style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:rgba(8,8,8,.55);margin-bottom:clamp(28px,6vh,64px)">Family &amp; Criminal Law</div>
+<div data-rise="1" style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:rgba(8,8,8,.55);margin-bottom:clamp(28px,6vh,64px)">Connecticut Family Law &#183; Glastonbury</div>
 <h1 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(56px,10vw,152px);line-height:.94;letter-spacing:-.025em;margin:0 0 clamp(28px,5vh,52px)">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">When it</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">matters,</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">Morton.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Connecticut</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">family</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">law.</span></span>
 </h1>
-<p data-rise="1" style="font-size:clamp(15px,1.15vw,18px);line-height:1.75;color:rgba(8,8,8,.66);margin:0 0 clamp(32px,6vh,56px);max-width:36ch">Considered counsel in family and criminal matters, for people who need to understand exactly where they stand.</p>
+<p data-rise="1" style="font-size:clamp(15px,1.15vw,18px);line-height:1.75;color:rgba(8,8,8,.66);margin:0 0 clamp(32px,6vh,56px);max-width:36ch">Divorce, custody, support, modification, enforcement and marital agreements &#8212; with a family-violence defense capability alongside them. An office on Main Street in Glastonbury.</p>
 <div data-rise="1" style="display:flex;flex-wrap:wrap;gap:14px 32px;align-items:center">
-<a href="#contact" style="display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#0B2047;color:#F7F5F0;padding:19px 32px;transition:background .35s ease" style-hover="background:#080808;color:#F7F5F0">Speak With Morton <span>&#8594;</span></a>
-<a href="#practice" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid rgba(8,8,8,.25);padding-bottom:7px" style-hover="color:#8A6B22;border-color:#8A6B22">Explore Our Practice <span>&#8594;</span></a>
+<a href="#contact" style="display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#0B2047;color:#F7F5F0;padding:19px 32px;transition:background .35s ease" style-hover="background:#080808;color:#F7F5F0">Request A Consultation <span>&#8594;</span></a>
+<a href="#practice" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid rgba(8,8,8,.25);padding-bottom:7px" style-hover="color:#8A6B22;border-color:#8A6B22">Practice Areas <span>&#8594;</span></a>
 </div>
 </div>
 <div data-parallax="1" data-order="2" style="position:relative;align-self:stretch;min-height:min(72vh,720px);overflow:hidden;background:#0B2047">
@@ -92,7 +96,7 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 </div>
 <div style="border-top:1px solid rgba(8,8,8,.14)">
 <div style="max-width:1560px;margin:0 auto;padding:18px clamp(20px,4vw,64px);display:flex;flex-wrap:wrap;gap:14px 40px;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(8,8,8,.5)">
-<span>[City] &#183; [Jurisdiction]</span>
+<span>Glastonbury &#183; Connecticut</span>
 <span data-scrollcue="1" style="display:block;width:1px;height:34px;background:#C9A24A;animation:mqLine 3s ease-in-out infinite"></span>
 </div>
 </div>
@@ -100,10 +104,10 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 
 <section aria-label="Practice summary" style="background:#0B2047;color:#F7F5F0">
 <div style="max-width:1560px;margin:0 auto;padding:clamp(36px,6vh,64px) clamp(20px,4vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:24px clamp(28px,4vw,72px)">
-<div data-rise="1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2vw,30px);letter-spacing:.01em">Family Law</div>
-<div data-rise="1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2vw,30px);letter-spacing:.01em">Criminal Law</div>
-<div data-rise="1" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,245,240,.7);align-self:center">Discreet Counsel</div>
-<div data-rise="1" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,245,240,.7);align-self:center">Strategic Representation</div>
+<div data-rise="1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2vw,30px);letter-spacing:.01em">Seven practice areas</div>
+<div data-rise="1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,2vw,30px);letter-spacing:.01em">Hartford Judicial District</div>
+<div data-rise="1" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,245,240,.7);align-self:center">G.A. 12, Manchester</div>
+<div data-rise="1" style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,245,240,.7);align-self:center">Connecticut only</div>
 </div>
 </section>
 
@@ -112,91 +116,39 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 <div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">01 &nbsp;&#8212;&nbsp; The Position</div>
 <div>
 <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.6vw,88px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(32px,6vh,60px);max-width:17ch">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">When everything</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">feels uncertain,</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">clarity matters.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Most of what you have read</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">about divorce describes</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">another state.</span></span>
 </h2>
-<p data-rise="1" style="font-size:clamp(16px,1.3vw,20px);line-height:1.8;color:rgba(8,8,8,.7);margin:0 0 clamp(28px,5vh,48px);max-width:44ch">Legal matters become overwhelming quickly. Morton helps clients understand their position, their options, and what comes next.</p>
-<a data-rise="1" href="#contact" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid rgba(8,8,8,.25);padding-bottom:7px" style-hover="color:#8A6B22;border-color:#8A6B22">Talk To Morton <span>&#8594;</span></a>
+<p data-rise="1" style="font-size:clamp(16px,1.3vw,20px);line-height:1.8;color:rgba(8,8,8,.7);margin:0 0 clamp(28px,5vh,48px);max-width:44ch">Connecticut is an all-property state with no alimony formula. Before anything else, it helps to know which rules actually apply to you.</p>
+<a data-rise="1" href="#contact" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid rgba(8,8,8,.25);padding-bottom:7px" style-hover="color:#8A6B22;border-color:#8A6B22">Request A Consultation <span>&#8594;</span></a>
 </div>
 </div>
 </section>
 
-<section id="practice" style="background:#080808;color:#F7F5F0">
-<div style="max-width:1560px;margin:0 auto;padding:clamp(80px,14vh,160px) clamp(20px,4vw,64px) 0">
-<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(247,245,240,.5)">02 &nbsp;&#8212;&nbsp; Practice</div>
-</div>
-<a data-panel="1" href="family-law.html" style="position:relative;display:block;overflow:hidden;border-top:1px solid rgba(247,245,240,.16);margin-top:clamp(48px,8vh,96px)">
-<img data-panelimg="1" src="assets/img/family-panel.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1.4s cubic-bezier(.16,1,.3,1)">
-<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,8,.94) 0%,rgba(8,8,8,.74) 48%,rgba(8,8,8,.5) 100%)"></div>
-<div style="position:relative;max-width:1560px;margin:0 auto;padding:clamp(44px,9vh,110px) clamp(20px,4vw,64px);display:grid;grid-template-columns:clamp(44px,6vw,110px) minmax(0,1fr) auto;gap:clamp(16px,3vw,48px);align-items:center">
-<span style="font-size:11px;letter-spacing:.2em;color:#C9A24A">01</span>
-<div>
-<h3 data-paneltitle="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(36px,6.4vw,104px);line-height:1;letter-spacing:-.025em;margin:0 0 16px;transition:transform .7s cubic-bezier(.16,1,.3,1)">Family Law</h3>
-<p style="font-size:15px;line-height:1.7;color:rgba(247,245,240,.66);margin:0;max-width:34ch">Protecting what matters. Separation, property, and parenting arrangements.</p>
-<span data-panelrule="1" style="display:block;height:1px;background:#C9A24A;margin-top:24px;width:100%;max-width:220px;transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.16,1,.3,1)"></span>
-</div>
-<span data-panelarrow="1" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24A;justify-self:end;display:inline-flex;align-items:center;gap:10px;transition:transform .6s cubic-bezier(.16,1,.3,1)">Explore <span>&#8594;</span></span>
-</div>
-</a>
-<a data-panel="1" href="criminal-law.html" style="position:relative;display:block;overflow:hidden;border-top:1px solid rgba(247,245,240,.16);border-bottom:1px solid rgba(247,245,240,.16)">
-<img data-panelimg="1" src="assets/img/criminal-panel.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1.4s cubic-bezier(.16,1,.3,1)">
-<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,8,.94) 0%,rgba(8,8,8,.74) 48%,rgba(8,8,8,.5) 100%)"></div>
-<div style="position:relative;max-width:1560px;margin:0 auto;padding:clamp(44px,9vh,110px) clamp(20px,4vw,64px);display:grid;grid-template-columns:clamp(44px,6vw,110px) minmax(0,1fr) auto;gap:clamp(16px,3vw,48px);align-items:center">
-<span style="font-size:11px;letter-spacing:.2em;color:#C9A24A">02</span>
-<div>
-<h3 data-paneltitle="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(36px,6.4vw,104px);line-height:1;letter-spacing:-.025em;margin:0 0 16px;transition:transform .7s cubic-bezier(.16,1,.3,1)">Criminal Law</h3>
-<p style="font-size:15px;line-height:1.7;color:rgba(247,245,240,.66);margin:0;max-width:34ch">Defending what matters. Charges, bail, and trial, prepared early.</p>
-<span data-panelrule="1" style="display:block;height:1px;background:#C9A24A;margin-top:24px;width:100%;max-width:220px;transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.16,1,.3,1)"></span>
-</div>
-<span data-panelarrow="1" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24A;justify-self:end;display:inline-flex;align-items:center;gap:10px;transition:transform .6s cubic-bezier(.16,1,.3,1)">Explore <span>&#8594;</span></span>
-</div>
-</a>
-</section>
+<section id="practice" style="background:#F7F5F0"><div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px) clamp(96px,18vh,220px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start"><div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">02 &nbsp;&#8212;&nbsp; Practice</div><div><h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,4.6vw,74px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(20px,3vh,32px);max-width:15ch">Seven <span style="font-style:italic">practice areas.</span></h2><p data-rise="1" style="font-size:15px;line-height:1.85;color:rgba(8,8,8,.66);margin:0 0 clamp(32px,5vh,56px);max-width:56ch">Six on the family side, one criminal &#8212; limited to family-violence matters. Each is a hub with its own service pages.</p><a data-rise="1" href="family-law.html#divorce" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">01</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Divorce</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">Equitable division, not equal. No alimony formula.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a><a data-rise="1" href="family-law.html#custody" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">02</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Custody &amp; Visitation</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">Decision-making and the schedule are decided separately.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a><a data-rise="1" href="family-law.html#child-support" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">03</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Child Support</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">Income shares, plus the college support order.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a><a data-rise="1" href="family-law.html#modification" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">04</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Modification</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">The order stands until the court changes it.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a><a data-rise="1" href="family-law.html#enforcement" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">05</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Enforcement &amp; Contempt</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">For the parent who is owed and the parent who was served.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a><a data-rise="1" href="family-law.html#marital-agreements" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">06</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Prenuptial &amp; Postnuptial Agreements</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">The direct answer to the all-property rule.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a><a data-rise="1" href="criminal-law.html" style="display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr) auto;gap:clamp(14px,2.4vw,44px);align-items:baseline;border-top:1px solid rgba(8,8,8,.18);border-bottom:1px solid rgba(8,8,8,.18);padding:clamp(20px,3.4vh,34px) 0;color:#080808"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22">07</span><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0">Domestic Violence (Criminal)</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:36ch">Family violence only. Arraigned at G.A. 12 in Manchester.</p><span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8A6B22;white-space:nowrap">Explore &#8594;</span></a></div></div></section>
 
-<section id="approach" style="background:#F7F5F0">
-<div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start">
-<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">03 &nbsp;&#8212;&nbsp; Approach</div>
-<div style="position:relative;padding-left:clamp(20px,3vw,52px)">
-<span data-vline="1" style="position:absolute;left:0;top:6px;bottom:6px;width:1px;background:rgba(8,8,8,.18);transform:scaleY(0);transform-origin:top;transition:transform 1.6s cubic-bezier(.16,1,.3,1)"></span>
-<div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(16px,3vw,56px);align-items:baseline;padding-bottom:clamp(34px,6vh,64px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.6vw,72px);line-height:1;letter-spacing:-.02em;margin:0"><span style="font-size:.24em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">01</span>Listen.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:38ch">Before advice, the facts. What has happened, what is at risk, and what you actually need from this.</p></div>
-<div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(16px,3vw,56px);align-items:baseline;padding-bottom:clamp(34px,6vh,64px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.6vw,72px);line-height:1;letter-spacing:-.02em;margin:0"><span style="font-size:.24em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">02</span>Understand.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:38ch">Your position explained in plain terms, including the parts that are not in your favour.</p></div>
-<div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(16px,3vw,56px);align-items:baseline;padding-bottom:clamp(34px,6vh,64px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.6vw,72px);line-height:1;letter-spacing:-.02em;margin:0"><span style="font-size:.24em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">03</span>Strategise.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:38ch">Options mapped against cost, time, and consequence before anything is filed.</p></div>
-<div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(16px,3vw,56px);align-items:baseline;padding-bottom:clamp(34px,6vh,64px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.6vw,72px);line-height:1;letter-spacing:-.02em;margin:0"><span style="font-size:.24em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">04</span>Act.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:38ch">Negotiation or advocacy, run to a plan, with counsel briefed early rather than late.</p></div>
-<div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(16px,3vw,56px);align-items:baseline"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.6vw,72px);line-height:1;letter-spacing:-.02em;margin:0"><span style="font-size:.24em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">05</span>Resolve.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:38ch">The strongest available outcome, and a clear account of how it was reached.</p></div>
-</div>
-</div>
-</section>
+<section id="approach" style="background:#F7F5F0"><div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px) clamp(96px,18vh,220px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start"><div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">03 &nbsp;&#8212;&nbsp; Approach</div><div><h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,4.6vw,74px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(32px,5vh,56px);max-width:15ch">How a Connecticut <span style="font-style:italic">case runs.</span></h2><div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,2.4vw,44px);align-items:baseline;padding-bottom:clamp(28px,5vh,52px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.8vw,40px);line-height:1.05;letter-spacing:-.02em;margin:0"><span style="font-size:.26em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">01</span>Consultation</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:40ch">Your position, the assets, the children, and the range of realistic outcomes. A conflict check runs first.</p></div><div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,2.4vw,44px);align-items:baseline;padding-bottom:clamp(28px,5vh,52px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.8vw,40px);line-height:1.05;letter-spacing:-.02em;margin:0"><span style="font-size:.26em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">02</span>Automatic orders</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:40ch">P.B. &#167;25-5 binds both parties from the start of the case, restricting transfers, travel with children and insurance changes.</p></div><div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,2.4vw,44px);align-items:baseline;padding-bottom:clamp(28px,5vh,52px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.8vw,40px);line-height:1.05;letter-spacing:-.02em;margin:0"><span style="font-size:.26em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">03</span>Financial affidavit</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:40ch">Connecticut runs on the sworn affidavit. Incomplete disclosure is the most common cause of delay and cost.</p></div><div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,2.4vw,44px);align-items:baseline;padding-bottom:clamp(28px,5vh,52px)"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.8vw,40px);line-height:1.05;letter-spacing:-.02em;margin:0"><span style="font-size:.26em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">04</span>Family Services</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:40ch">Mediation and, where ordered, a family relations study. Most matters resolve here.</p></div><div data-rise="1" data-collapse="1" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(14px,2.4vw,44px);align-items:baseline;"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,2.8vw,40px);line-height:1.05;letter-spacing:-.02em;margin:0"><span style="font-size:.26em;letter-spacing:.2em;vertical-align:super;color:#8A6B22;margin-right:.9em;font-family:'Manrope',sans-serif">05</span>Judgment</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:40ch">Where agreement is not possible, the case is heard at 90 Washington Street in Hartford.</p></div></div></div></section>
 
 <section aria-label="Statement" style="position:relative;background:#0B2047;color:#F7F5F0;overflow:hidden">
 <div data-drift="1" aria-hidden="true" style="position:absolute;right:-12%;top:50%;width:min(60vw,780px);height:min(60vw,780px);border:1px solid rgba(201,162,74,.28);border-radius:50%;transform:translateY(-50%)"></div>
 <div style="position:relative;max-width:1560px;margin:0 auto;padding:clamp(110px,26vh,300px) clamp(20px,4vw,64px)">
 <span data-rise="1" style="display:block;width:52px;height:1px;background:#C9A24A;margin-bottom:clamp(32px,6vh,64px)"></span>
 <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,7.4vw,124px);line-height:.98;letter-spacing:-.025em;margin:0;max-width:15ch">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Legal advice</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">should make</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">things clearer.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Connecticut law</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">should be explained</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">before it happens to you.</span></span>
 </h2>
 </div>
 </section>
 
-<section style="background:#F7F5F0">
-<div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start">
-<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">04 &nbsp;&#8212;&nbsp; Why Morton</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(32px,4vw,72px)">
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:24px"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,2.4vw,38px);letter-spacing:-.01em;margin:0 0 14px">Discretion.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:28ch">Your circumstances deserve careful handling.</p></div>
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:24px"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,2.4vw,38px);letter-spacing:-.01em;margin:0 0 14px">Clarity.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:28ch">You deserve to understand your options.</p></div>
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:24px"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,2.4vw,38px);letter-spacing:-.01em;margin:0 0 14px">Preparation.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:28ch">Strong representation begins before the matter reaches court.</p></div>
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:24px"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(26px,2.4vw,38px);letter-spacing:-.01em;margin:0 0 14px">Resolve.</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0;max-width:28ch">We act with purpose when the stakes are high.</p></div>
-</div>
-</div>
-</section>
+<section id="connecticut" style="background:#F7F5F0"><div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px) clamp(96px,18vh,220px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start"><div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">04 &nbsp;&#8212;&nbsp; Connecticut</div><div><h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,4.6vw,74px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(20px,3vh,32px);max-width:15ch">Six things Connecticut <span style="font-style:italic">does differently.</span></h2><p data-rise="1" style="font-size:14px;line-height:1.8;color:rgba(8,8,8,.5);margin:0 0 clamp(36px,6vh,64px);max-width:62ch">Statements of Connecticut law, not claims about outcomes. Statutory references are drawn from the content plan and are confirmed by the attorney at drafting.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(28px,4vw,64px)"><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;color:#8A6B22;margin-bottom:16px">01</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,31px);letter-spacing:-.01em;margin:0 0 14px">All-property state</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 10px;max-width:32ch">A Connecticut court may assign any asset either spouse owns &#8212; including premarital, inherited and gifted property. C.G.S. &#167;46b-81.</p></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;color:#8A6B22;margin-bottom:16px">02</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,31px);letter-spacing:-.01em;margin:0 0 14px">No alimony formula</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 10px;max-width:32ch">There is no guideline calculation. The court weighs the statutory factors. C.G.S. &#167;46b-82.</p></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;color:#8A6B22;margin-bottom:16px">03</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,31px);letter-spacing:-.01em;margin:0 0 14px">College support</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 10px;max-width:32ch">An educational support order is available, but generally must be sought before the child turns eighteen. C.G.S. &#167;46b-56c.</p></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;color:#8A6B22;margin-bottom:16px">04</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,31px);letter-spacing:-.01em;margin:0 0 14px">The nonadversarial track</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 10px;max-width:32ch">A streamlined dissolution for short marriages with no children and limited assets. C.G.S. &#167;&#167;46b-44a&#8211;44c.</p></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;color:#8A6B22;margin-bottom:16px">05</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,31px);letter-spacing:-.01em;margin:0 0 14px">Coercive control</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 10px;max-width:32ch">Since Jennifer's Law, a pattern of controlling behavior can support a civil restraining order without physical violence. P.A. 21-78.</p></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;color:#8A6B22;margin-bottom:16px">06</div><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,31px);letter-spacing:-.01em;margin:0 0 14px">No common-law marriage</h3><p style="font-size:15px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 10px;max-width:32ch">Living together does not create a marriage in Connecticut, however long the relationship.</p></div></div></div></div></section>
 
 <section id="people" style="background:#F7F5F0">
 <div style="max-width:1560px;margin:0 auto;padding:0 clamp(20px,4vw,64px) clamp(96px,18vh,220px)">
 <div data-collapse="1" style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start;margin-bottom:clamp(40px,7vh,80px)">
 <div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">05 &nbsp;&#8212;&nbsp; People</div>
-<h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.4vw,84px);line-height:1.02;letter-spacing:-.02em;margin:0;max-width:14ch">The people behind Morton.</h2>
+<h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.4vw,84px);line-height:1.02;letter-spacing:-.02em;margin:0;max-width:14ch">One attorney. <span style="font-style:italic">Verifiable credentials.</span></h2>
 </div>
 <div data-collapse="1" style="display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:end">
 <a data-person="1" href="profile.html" style="display:block">
@@ -205,19 +157,17 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 </div>
 <div style="display:flex;flex-wrap:wrap;gap:16px 40px;align-items:baseline;justify-content:space-between">
 <div>
-<div style="font-family:'Cormorant Garamond',serif;font-size:clamp(26px,2.4vw,38px);letter-spacing:-.01em;margin-bottom:8px">[Name Surname]</div>
-<div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,8,8,.55)">Principal Solicitor &nbsp;&#183;&nbsp; Family Law, Criminal Law</div>
+<div style="font-family:'Cormorant Garamond',serif;font-size:clamp(26px,2.4vw,38px);letter-spacing:-.01em;margin-bottom:8px">Daniel M. Morton</div>
+<div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,8,8,.55)">Attorney &#183; Founder &nbsp;&#183;&nbsp; Connecticut Juris No. 438184, admitted 2017</div>
 </div>
 <span style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8A6B22">View Profile &#8594;</span>
 </div>
 </a>
-<div data-rise="1" style="padding-bottom:clamp(4px,2vh,24px)">
-<p style="font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:clamp(24px,2.6vw,40px);line-height:1.3;letter-spacing:-.01em;margin:0 0 clamp(24px,4vh,40px)">&#8220;Clear advice. Calm guidance. Exactly what we needed.&#8221;</p>
-<div style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(8,8,8,.5)">&#8212; Verified Client</div>
-<p style="font-size:12px;line-height:1.7;color:rgba(8,8,8,.45);margin:clamp(28px,5vh,48px) 0 0;max-width:34ch">Replace with a verified client statement. Nothing here is invented on your behalf.</p>
+<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding-top:22px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8A6B22;margin-bottom:16px">Credentials</div><div style="border-bottom:1px solid rgba(8,8,8,.18);padding:12px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Connecticut &#183; admitted April 10, 2017</div><div style="border-bottom:1px solid rgba(8,8,8,.18);padding:12px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Connecticut Juris No. 438184 &#183; status active</div><div style="border-bottom:1px solid rgba(8,8,8,.18);padding:12px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Hartford Judicial District &#183; 90 Washington Street</div><div style="border-bottom:1px solid rgba(8,8,8,.18);padding:12px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">G.A. 12 &#183; 410 Center Street, Manchester</div><p style="font-size:12px;line-height:1.75;color:rgba(8,8,8,.45);margin:16px 0 0;max-width:44ch">Verifiable through the Connecticut Judicial Branch attorney lookup. The firm does not publish case results, and testimonials are not published without informed written client consent.</p></div>
 </div>
 </div>
-</div>
+
+
 </section>
 
 <section id="insights" style="background:#080808;color:#F7F5F0">
@@ -225,27 +175,27 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 <div data-collapse="1" style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start;margin-bottom:clamp(40px,7vh,80px)">
 <div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(247,245,240,.5);padding-top:.6em">06 &nbsp;&#8212;&nbsp; Insights</div>
 <div style="display:flex;flex-wrap:wrap;gap:20px 48px;align-items:flex-end;justify-content:space-between">
-<h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.4vw,84px);line-height:1.02;letter-spacing:-.02em;margin:0">Notes on process.</h2>
+<h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.4vw,84px);line-height:1.02;letter-spacing:-.02em;margin:0">Notes on <span style="font-style:italic">Connecticut process.</span></h2>
 <a data-rise="1" href="insights.html" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid rgba(247,245,240,.3);padding-bottom:7px" style-hover="color:#C9A24A;border-color:#C9A24A">All Insights &#8594;</a>
 </div>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(28px,3.4vw,56px)">
 <a data-article="1" href="article.html" style="display:block;color:#F7F5F0">
 <div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:26px;background:#0B2047"><img src="assets/img/insight-keys.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)"></div>
-<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:16px">01 &nbsp;Family Law</div>
-<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.18;letter-spacing:-.01em;margin:0 0 18px;max-width:20ch">What happens when you begin a family law matter</h3>
+<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:16px">01 &nbsp;Divorce</div>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.18;letter-spacing:-.01em;margin:0 0 18px;max-width:20ch">Is Connecticut a 50/50 divorce state?</h3>
 <span style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,245,240,.55)">Read Article &#8594;</span>
 </a>
 <a data-article="1" href="article.html" style="display:block;color:#F7F5F0">
 <div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:26px;background:#0B2047"><img src="assets/img/interview-room.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)"></div>
-<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:16px">02 &nbsp;Criminal Law</div>
-<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.18;letter-spacing:-.01em;margin:0 0 18px;max-width:20ch">What to do when you are facing a charge</h3>
+<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:16px">02 &nbsp;Domestic Violence</div>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.18;letter-spacing:-.01em;margin:0 0 18px;max-width:20ch">Arrested for domestic violence in Connecticut: what happens before your first court date</h3>
 <span style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,245,240,.55)">Read Article &#8594;</span>
 </a>
 <a data-article="1" href="article.html" style="display:block;color:#F7F5F0">
 <div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:26px;background:#0B2047"><img src="assets/img/chambers-desk.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)"></div>
-<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:16px">03 &nbsp;Legal Guide</div>
-<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.18;letter-spacing:-.01em;margin:0 0 18px;max-width:20ch">Your first consultation: what to expect</h3>
+<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:16px">03 &nbsp;Child Support</div>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.18;letter-spacing:-.01em;margin:0 0 18px;max-width:20ch">Who pays for college after a Connecticut divorce?</h3>
 <span style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,245,240,.55)">Read Article &#8594;</span>
 </a>
 </div>
@@ -261,7 +211,7 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 <span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">to figure it</span></span>
 <span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">out alone.</span></span>
 </h2>
-<p data-rise="1" style="font-size:clamp(16px,1.2vw,19px);line-height:1.75;color:rgba(8,8,8,.66);margin:0 0 clamp(32px,5vh,52px);max-width:36ch">Speak with Morton about your circumstances.</p>
+<p data-rise="1" style="font-size:clamp(16px,1.2vw,19px);line-height:1.75;color:rgba(8,8,8,.66);margin:0 0 clamp(32px,5vh,52px);max-width:36ch">A Connecticut family law practice in Glastonbury, with a family-violence defense capability alongside it.</p>
 <a data-rise="1" href="#contact" style="display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#0B2047;color:#F7F5F0;padding:19px 32px;transition:background .35s ease" style-hover="background:#080808;color:#F7F5F0">Start A Conversation <span>&#8594;</span></a>
 </div>
 </div>
@@ -275,59 +225,89 @@ input::placeholder,textarea::placeholder{color:rgba(8,8,8,.34)}
 <span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Let's talk about</span></span>
 <span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">what comes next.</span></span>
 </h2>
-<p data-rise="1" style="font-size:clamp(15px,1.15vw,18px);line-height:1.75;color:rgba(247,245,240,.7);margin:0 0 clamp(40px,7vh,72px);max-width:40ch">Tell us a little about your circumstances. We review every enquiry and respond within one business day.</p>
+<p data-rise="1" style="font-size:clamp(15px,1.15vw,18px);line-height:1.75;color:rgba(247,245,240,.7);margin:0 0 clamp(40px,7vh,72px);max-width:40ch">The intake form routes to daniel@mfclegal.com. A conflict check runs before any substantive reply, so keep the first message brief.</p>
 <form data-form="1" style="display:grid;grid-template-columns:1fr 1fr;gap:28px 36px">
 <div style="display:flex;flex-direction:column;gap:10px"><label for="q-name" style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5)">Name</label><input id="q-name" type="text" autocomplete="name" style="background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.28);color:#F7F5F0;font-size:16px;padding:10px 0;outline:none"></div>
 <div style="display:flex;flex-direction:column;gap:10px"><label for="q-email" style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5)">Email</label><input id="q-email" type="email" autocomplete="email" style="background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.28);color:#F7F5F0;font-size:16px;padding:10px 0;outline:none"></div>
 <div style="display:flex;flex-direction:column;gap:10px"><label for="q-phone" style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5)">Phone</label><input id="q-phone" type="tel" autocomplete="tel" style="background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.28);color:#F7F5F0;font-size:16px;padding:10px 0;outline:none"></div>
-<div style="display:flex;flex-direction:column;gap:10px"><label for="q-matter" style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5)">Matter Type</label><select id="q-matter" style="background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.28);color:#F7F5F0;font-size:16px;padding:10px 0;outline:none"><option style="color:#080808">Family law</option><option style="color:#080808">Criminal law</option><option style="color:#080808">Not sure yet</option></select></div>
+<div style="display:flex;flex-direction:column;gap:10px"><label for="q-matter" style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5)">Matter Type</label><select id="q-matter" style="background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.28);color:#F7F5F0;font-size:16px;padding:10px 0;outline:none"><option style="color:#080808">Divorce</option><option style="color:#080808">Custody &amp; Visitation</option><option style="color:#080808">Child Support</option><option style="color:#080808">Modification</option><option style="color:#080808">Enforcement &amp; Contempt</option><option style="color:#080808">Prenuptial &amp; Postnuptial Agreements</option><option style="color:#080808">Domestic Violence (Criminal)</option><option style="color:#080808">Not sure yet</option></select></div>
 <div style="display:flex;flex-direction:column;gap:10px;grid-column:1 / -1"><label for="q-msg" style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5)">Message</label><textarea id="q-msg" rows="3" placeholder="Tell us what you're dealing with." style="background:transparent;border:0;border-bottom:1px solid rgba(247,245,240,.28);color:#F7F5F0;font-size:16px;padding:10px 0;outline:none;resize:vertical"></textarea></div>
 <div style="grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;margin-top:12px">
-<button type="submit" style="display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#F7F5F0;color:#0B2047;border:0;padding:19px 32px;cursor:pointer;transition:background .35s ease" style-hover="background:#C9A24A;color:#080808">Send Enquiry <span>&#8594;</span></button>
+<div style="grid-column:1 / -1;display:flex;gap:12px;align-items:flex-start;margin-top:22px"><input id="h-tcpa" type="checkbox" style="margin-top:4px;accent-color:#C9A24A;width:16px;height:16px;flex:none"><label for="h-tcpa" style="font-size:12px;line-height:1.7;color:rgba(247,245,240,.6)">By providing your phone number and checking this box, you agree that the firm may contact you by phone or text about your inquiry. Consent is not a condition of representation. Message and data rates may apply; reply STOP to opt out.</label></div><div style="grid-column:1 / -1;border-top:1px solid rgba(247,245,240,.18);padding-top:16px;margin-top:18px;margin-bottom:4px"><p style="font-size:12px;line-height:1.75;color:rgba(247,245,240,.6);margin:0;max-width:72ch">Contacting the firm through this website, including by submitting this form, does not create an attorney-client relationship. Please do not send confidential or time-sensitive information until an attorney-client relationship has been established in writing.</p></div><button type="submit" style="display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#F7F5F0;color:#0B2047;border:0;padding:19px 32px;cursor:pointer;transition:background .35s ease" style-hover="background:#C9A24A;color:#080808">Send Inquiry <span>&#8594;</span></button>
 </div>
 </form>
 <div data-sent="1" role="status" style="display:none">
 <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.4vw,52px);letter-spacing:-.01em;margin-bottom:16px">Received.</div>
-<p style="font-size:16px;line-height:1.75;color:rgba(247,245,240,.7);margin:0;max-width:40ch">A solicitor will respond within one business day. If the matter is urgent, call rather than wait.</p>
+<p style="font-size:16px;line-height:1.75;color:rgba(247,245,240,.7);margin:0;max-width:40ch">Attorney Daniel M. Morton will respond within one business day. If an arraignment or filing deadline is close, say so in the message.</p>
 </div>
 </div>
 <div style="display:flex;flex-direction:column;gap:clamp(28px,4.4vh,44px);padding-top:clamp(0px,4vh,64px)">
 <div data-rise="1" style="border:1px solid rgba(201,162,74,.4);padding:clamp(20px,3vh,28px)">
 <div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:14px">Confidentiality</div>
-<p style="font-family:'Cormorant Garamond',serif;font-size:clamp(19px,1.7vw,25px);line-height:1.35;margin:0;color:#F7F5F0">Your enquiry is treated with confidentiality and read by a solicitor.</p>
+<p style="font-family:'Cormorant Garamond',serif;font-size:clamp(19px,1.7vw,25px);line-height:1.35;margin:0;color:#F7F5F0">Contacting the firm through this website, including by submitting this form, does not create an attorney-client relationship. Please do not send confidential or time-sensitive information until an attorney-client relationship has been established in writing.</p>
 </div>
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5);margin-bottom:12px">Call Morton</div><div style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.2vw,34px);letter-spacing:-.01em">[Phone number]</div></div>
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5);margin-bottom:12px">Office</div><div style="font-size:16px;line-height:1.8;color:rgba(247,245,240,.78)">[Address line 1]<br>[Address line 2]<br>[City, postcode]</div></div>
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5);margin-bottom:12px">Hours</div><div style="font-size:16px;color:rgba(247,245,240,.78)">By appointment</div></div>
+<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5);margin-bottom:12px">Direct</div><div style="font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.2vw,34px);letter-spacing:-.01em">[Phone number pending]</div></div>
+<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5);margin-bottom:12px">Office</div><div style="font-size:16px;line-height:1.8;color:rgba(247,245,240,.78)">2837-A Main Street<br>Glastonbury, CT 06033<br>Hartford Judicial District</div></div>
+<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,245,240,.5);margin-bottom:12px">Hours</div><div style="font-size:16px;line-height:1.8;color:rgba(247,245,240,.78)">Monday&#8211;Friday, 9:00&#8211;5:30<br>After hours by arrangement</div></div>
 </div>
 </div>
 </section>
 
 <footer style="background:#080808;color:#F7F5F0">
 <div style="max-width:1560px;margin:0 auto;padding:clamp(72px,13vh,150px) clamp(20px,4vw,64px) clamp(32px,5vh,56px)">
-<img src="assets/logo/morton-lockup.png" alt="Morton" style="height:38px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:clamp(44px,8vh,90px)">
-<h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,7.4vw,124px);line-height:1;letter-spacing:-.025em;margin:0 0 clamp(56px,10vh,130px);max-width:14ch">Serious matters. <span style="font-style:italic;color:rgba(247,245,240,.5)">Clear direction.</span></h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px 48px;border-top:1px solid rgba(247,245,240,.16);padding-top:clamp(32px,5vh,52px)">
-<div><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:18px">Morton</div><div style="font-size:14px;line-height:1.9;color:rgba(247,245,240,.7)">Family and Criminal Law</div></div>
-<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Navigate</div><a href="family-law.html" style="font-size:14px;color:rgba(247,245,240,.78)">Family Law</a><a href="#approach" style="font-size:14px;color:rgba(247,245,240,.78)">Approach</a><a href="profile.html" style="font-size:14px;color:rgba(247,245,240,.78)">People</a><a href="insights.html" style="font-size:14px;color:rgba(247,245,240,.78)">Insights</a></div>
-<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Contact</div><span style="font-size:14px;color:rgba(247,245,240,.78)">[Phone number]</span><span style="font-size:14px;color:rgba(247,245,240,.78)">[Email address]</span><span style="font-size:14px;color:rgba(247,245,240,.78)">[Address]</span></div>
-<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Legal</div><a href="contact.html" style="font-size:14px;color:rgba(247,245,240,.78)">Privacy</a><a href="contact.html" style="font-size:14px;color:rgba(247,245,240,.78)">Terms of engagement</a><a href="contact.html" style="font-size:14px;color:rgba(247,245,240,.78)">Accessibility</a></div>
+<img src="assets/logo/morton-lockup.png" alt="Morton Family and Criminal Law" style="height:38px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:clamp(44px,8vh,90px)">
+<h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(36px,6.6vw,112px);line-height:1;letter-spacing:-.025em;margin:0 0 clamp(56px,10vh,130px);max-width:16ch">Connecticut family law. <span style="font-style:italic;color:rgba(247,245,240,.5)">Glastonbury.</span></h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px 48px;border-top:1px solid rgba(247,245,240,.16);padding-top:clamp(32px,5vh,52px)">
+<div><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:18px">The Firm</div><div style="font-size:14px;line-height:1.9;color:rgba(247,245,240,.7)">Morton Family and<br>Criminal Law, PLLC</div></div>
+<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Practice Areas</div>
+<a href="family-law.html#divorce" style="font-size:14px;color:rgba(247,245,240,.78)">Divorce</a>
+<a href="family-law.html#custody" style="font-size:14px;color:rgba(247,245,240,.78)">Custody &amp; visitation</a>
+<a href="family-law.html#child-support" style="font-size:14px;color:rgba(247,245,240,.78)">Child support</a>
+<a href="family-law.html#modification" style="font-size:14px;color:rgba(247,245,240,.78)">Modification</a>
+<a href="family-law.html#enforcement" style="font-size:14px;color:rgba(247,245,240,.78)">Enforcement &amp; contempt</a>
+<a href="family-law.html#marital-agreements" style="font-size:14px;color:rgba(247,245,240,.78)">Prenuptial &amp; postnuptial</a>
+<a href="criminal-law.html" style="font-size:14px;color:rgba(247,245,240,.78)">Domestic violence</a></div>
+<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Firm</div>
+<a href="profile.html" style="font-size:14px;color:rgba(247,245,240,.78)">Attorney Daniel M. Morton</a>
+<a href="service-area.html" style="font-size:14px;color:rgba(247,245,240,.78)">Service area</a>
+<a href="faq.html" style="font-size:14px;color:rgba(247,245,240,.78)">Frequently asked questions</a>
+<a href="insights.html" style="font-size:14px;color:rgba(247,245,240,.78)">Insights</a>
+<a href="contact.html" style="font-size:14px;color:rgba(247,245,240,.78)">Contact</a></div>
+<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Office</div>
+<span style="font-size:14px;line-height:1.7;color:rgba(247,245,240,.78)">2837-A Main Street<br>Glastonbury, CT 06033</span>
+<a href="mailto:daniel@mfclegal.com" style="font-size:14px;color:rgba(247,245,240,.78)">daniel@mfclegal.com</a>
+<span style="font-size:14px;color:rgba(247,245,240,.78)">[Phone number pending]</span>
+<span style="font-size:11px;line-height:1.65;color:rgba(247,245,240,.38)">A local 860/959 number is being provisioned. It will be published here and used identically in every listing.</span></div>
+<div style="display:flex;flex-direction:column;gap:11px"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:7px">Legal</div>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(247,245,240,.78)">Disclaimer &amp; attorney advertising</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(247,245,240,.78)">Privacy policy</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(247,245,240,.78)">Terms of use</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(247,245,240,.78)">Accessibility statement</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(247,245,240,.78)">Cookie policy</a></div>
 </div>
-<div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;border-top:1px solid rgba(247,245,240,.12);margin-top:clamp(40px,6vh,64px);padding-top:22px;font-size:11px;color:rgba(247,245,240,.4)">
-<span>&#169; 2026 Morton. All rights reserved.</span>
-<span style="letter-spacing:.16em;text-transform:uppercase">Concept &#183; Not legal advice</span>
+
+<div style="border-top:1px solid rgba(247,245,240,.12);margin-top:clamp(40px,6vh,64px);padding-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px 48px;font-size:12px;line-height:1.8;color:rgba(247,245,240,.5)">
+<p style="margin:0"><span style="color:rgba(247,245,240,.82)">Attorney Daniel M. Morton is responsible for the content of this website.</span> Admitted in Connecticut since April 10, 2017 &#183; Connecticut Juris No. 438184. The firm offers legal services in Connecticut only.</p>
+<p style="margin:0">The information on this website is provided for general informational purposes only and is not legal advice. Viewing this site or contacting the firm does not create an attorney-client relationship. Prior results do not guarantee a similar outcome.</p>
+<p style="margin:0">The criminal practice is limited to family-violence matters. The firm does not accept general criminal defense.</p>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;border-top:1px solid rgba(247,245,240,.12);margin-top:26px;padding-top:22px;font-size:11px;color:rgba(247,245,240,.4)">
+<span>&#169; 2026 Morton Family and Criminal Law, PLLC. All rights reserved.</span>
+<span style="letter-spacing:.16em;text-transform:uppercase">Attorney Advertising</span>
 </div>
 </div>
 </footer>
 
 <div data-stickycta="1" style="position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;background:#0B2047;border-top:1px solid rgba(201,162,74,.4);transform:translateY(100%);transition:transform .5s cubic-bezier(.16,1,.3,1)">
 <div style="display:grid;grid-template-columns:2fr 1fr">
-<a href="#contact" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:17px 16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#F7F5F0">Speak With Morton <span>&#8594;</span></a>
+<a href="#contact" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:17px 16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#F7F5F0">Request A Consultation <span>&#8594;</span></a>
 <a href="#contact" style="display:flex;align-items:center;justify-content:center;min-height:56px;padding:17px 16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#C9A24A;color:#080808" style-hover="color:#080808">Call</a>
 </div>
 </div>
 
-<a data-floatcta="1" href="#contact" style="position:fixed;right:clamp(20px,3vw,44px);bottom:clamp(20px,3vw,44px);z-index:90;display:none;align-items:center;gap:12px;background:#0B2047;color:#F7F5F0;padding:18px 26px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.16,1,.3,1),background .35s ease" style-hover="background:#080808;color:#F7F5F0">Speak With Morton <span>&#8594;</span></a>
+<a data-floatcta="1" href="#contact" style="position:fixed;right:clamp(20px,3vw,44px);bottom:clamp(20px,3vw,44px);z-index:90;display:none;align-items:center;gap:12px;background:#0B2047;color:#F7F5F0;padding:18px 26px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.16,1,.3,1),background .35s ease" style-hover="background:#080808;color:#F7F5F0">Request A Consultation <span>&#8594;</span></a>
 
 </div>
 </x-dc>
