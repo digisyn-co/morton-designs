@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morton Modern — Insight Article</title>
+<title>Is Connecticut a 50/50 Divorce State? — Morton Family and Criminal Law</title>
 <script src="js/components.js"></script>
 <script src="js/support.js"></script>
 <script src="js/morton-ui.js"></script>
@@ -23,6 +23,22 @@ a:hover{color:#8A6410}
 a:focus-visible,button:focus-visible{outline:2px solid #F2B632;outline-offset:3px}
 ::selection{background:#F2B632;color:#06090F}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+/* --- narrow screens: collapse the fixed multi-column grids --- */
+@media (max-width: 760px){
+  [style*="grid-template-columns:minmax(0,"],
+  [style*="grid-template-columns: minmax(0,"],
+  [style*="grid-template-columns:minmax(0px,"],
+  [style*="grid-template-columns: minmax(0px,"],
+  [style*="grid-template-columns:clamp("],
+  [style*="grid-template-columns: clamp("]{grid-template-columns:minmax(0,1fr) !important}
+  [style*="columns:2 "],[style*="columns: 2 "]{columns:1 !important}
+  nav[aria-label="Primary"]{display:none !important}
+  [data-desknav]{display:none !important}
+  [data-burger]{display:flex !important}
+  body{overflow-wrap:break-word}
+}
+}
 </style>
 </helmet>
 <div style="background:#F4F1EA;color:#06090F;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
@@ -38,14 +54,14 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2B632;outline-offset:3p
 <div style="max-width:1600px;margin:0 auto;padding:clamp(110px,17vh,190px) clamp(18px,3vw,48px) clamp(40px,7vh,80px)">
 <div data-rise="1" style="display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;margin-bottom:clamp(24px,4vh,44px)">
 <a href="insights.html" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">&#8592; Insights</a>
-<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Family Law &#183; 4 Min Read &#183; [Date]</span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Divorce &#183; Explainer &#183; 5 Min Read &#183; September 2026</span>
 </div>
-<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(38px,7.4vw,116px);line-height:.9;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,40px);max-width:22ch">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">What to expect</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">when beginning a</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">family law matter</span></span>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(28px,6.2vw,110px);line-height:.9;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,40px);max-width:22ch">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Is Connecticut</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">a 50/50</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">divorce state?</span></span>
 </h1>
-<p data-rise="1" style="font-size:clamp(16px,1.4vw,22px);line-height:1.6;color:rgba(255,255,255,.72);margin:0;max-width:52ch">The first six weeks set the tone for everything that follows. Here is the sequence, the documents you will be asked for, and the decisions that cannot be deferred.</p>
+<p data-rise="1" style="font-size:clamp(16px,1.4vw,22px);line-height:1.6;color:rgba(255,255,255,.72);margin:0;max-width:52ch">No. Connecticut divides property equitably rather than equally &#8212; and it is one of the few states where the court can reach an asset you owned before the marriage or inherited during it.</p>
 </div>
 <div style="max-width:1600px;margin:0 auto;padding:0 clamp(18px,3vw,48px) clamp(40px,7vh,80px)">
 <div style="position:relative;overflow:hidden;aspect-ratio:21/9"><img src="assets/img/facade.jpeg" alt="Stone facade with a shadow line" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
@@ -57,61 +73,65 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2B632;outline-offset:3p
 <aside style="position:sticky;top:110px;display:flex;flex-direction:column;gap:28px">
 <div>
 <div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(6,9,15,.5);margin-bottom:12px">Written by</div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;text-transform:uppercase;margin-bottom:6px">[Name Surname]</div>
-<a href="profile.html" style="font-size:13px;color:rgba(6,9,15,.6)">Principal Solicitor &#8594;</a>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;text-transform:uppercase;margin-bottom:6px">Daniel M. Morton</div>
+<a href="profile.html" style="font-size:13px;color:rgba(6,9,15,.6)">Attorney &#183; Founder &#8594;</a>
 </div>
 <div style="border-top:1px solid rgba(6,9,15,.2);padding-top:20px">
 <div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(6,9,15,.5);margin-bottom:14px">In this article</div>
 <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.5">
-<a href="#s1" style="color:rgba(6,9,15,.75)">01 &nbsp;The first conference</a>
-<a href="#s2" style="color:rgba(6,9,15,.75)">02 &nbsp;What you will be asked for</a>
-<a href="#s3" style="color:rgba(6,9,15,.75)">03 &nbsp;Decisions that cannot wait</a>
-<a href="#s4" style="color:rgba(6,9,15,.75)">04 &nbsp;What happens next</a>
+<a href="#s1" style="color:rgba(6,9,15,.75)">01 &nbsp;Equitable is not equal</a>
+<a href="#s2" style="color:rgba(6,9,15,.75)">02 &nbsp;The all-property rule</a>
+<a href="#s3" style="color:rgba(6,9,15,.75)">03 &nbsp;What the court weighs</a>
+<a href="#s4" style="color:rgba(6,9,15,.75)">04 &nbsp;What you can do about it</a>
 </div>
 </div>
 </aside>
 
 <div style="max-width:70ch">
-<p data-rise="1" style="font-size:clamp(18px,1.5vw,23px);line-height:1.65;font-weight:500;margin:0 0 clamp(28px,4.6vh,44px)">Most people arrive at a family law matter having already made the hardest decision. What follows is procedural, and procedure rewards preparation. The purpose of this note is to remove the surprise from the first six weeks.</p>
+<p data-rise="1" style="font-size:clamp(18px,1.5vw,23px);line-height:1.65;font-weight:500;margin:0 0 clamp(28px,4.6vh,44px)">It is the first thing people ask, and the answer is no. Connecticut is an equitable distribution state, not a community property state, and the difference is not academic &#8212; it changes what is on the table before anyone argues about how to split it.</p>
 
-<h2 id="s1" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">01 &nbsp;The first conference</h2>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">The first conference is not a formality. It establishes the facts, the asset position, and the arrangements for any children, and it is where the range of realistic outcomes is set out for the first time. Expect it to run an hour or more, and expect to be asked questions that feel intrusive. They are the questions the other side will ask later.</p>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">You will leave with three things: a written summary of your position, an outline of the next steps, and a costs agreement. If any of those are missing, ask for them.</p>
+<h2 id="s1" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">01 &nbsp;Equitable is not equal</h2>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">A community property state starts from a presumption that marital property is divided down the middle. Connecticut does not. Under C.G.S. &#167;46b-81 the court assigns property between the parties on the statutory factors, and an even split is a possible outcome rather than a starting point.</p>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">In practice that means two couples with identical balance sheets can end up with different divisions, because the factors that drive the result &#8212; length of the marriage, each party's earnings and earning capacity, health, contributions to the estate &#8212; are not identical.</p>
 
-<div data-rise="1" style="background:#06090F;color:#FFFFFF;padding:clamp(24px,4vh,40px);margin:clamp(36px,5.6vh,56px) 0">
-<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:20px">Bring to the first conference</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px 32px">
-<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Identification</div>
-<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Marriage or relationship dates</div>
-<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Recent bank statements</div>
-<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Property and loan documents</div>
-<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Superannuation statements</div>
-<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Any existing agreements or orders</div>
-</div>
-</div>
-
-<h2 id="s2" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">02 &nbsp;What you will be asked for</h2>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Financial disclosure is an obligation, not a negotiating position. Both parties must give a full and frank account of their financial circumstances, and the obligation continues for the life of the matter. Incomplete disclosure is the single most common cause of delay and cost.</p>
+<h2 id="s2" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">02 &nbsp;The all-property rule</h2>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">This is the part that surprises people, and it is where Connecticut differs from most of the country. There is no separate category of property that sits outside the court's reach. Assets you owned before the marriage, assets you inherited, assets that were a gift to you alone &#8212; the court may assign any of them.</p>
 
 <blockquote data-rise="1" style="margin:clamp(36px,5.6vh,56px) 0;padding-left:clamp(20px,3vw,36px);border-left:2px solid #F2B632">
-<p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.6vw,40px);line-height:1.1;letter-spacing:-.03em;margin:0">Disclosure is not something you survive. It is the ground the whole matter is argued on.</p>
+<p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.6vw,40px);line-height:1.1;letter-spacing:-.03em;margin:0">In Connecticut, &#8220;that was mine before we married&#8221; is an argument about weight, not about jurisdiction.</p>
 </blockquote>
 
-<h2 id="s3" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">03 &nbsp;Decisions that cannot wait</h2>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">A small number of decisions are time-sensitive: whether to separate under one roof, how joint accounts and redraw facilities are handled, and what interim arrangements apply to the children. Each of these can affect the final outcome, and each is easier to address before positions harden.</p>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Where there is a risk to assets or to safety, urgent applications are available and should be considered immediately rather than held in reserve.</p>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">The origin of an asset still matters. It is one of the things the court weighs, and a recently inherited account that was never commingled is a different argument from one that funded the family home twenty years ago. But it is a factor, not a wall.</p>
+
+<div data-rise="1" style="background:#06090F;color:#FFFFFF;padding:clamp(24px,4vh,40px);margin:clamp(36px,5.6vh,56px) 0">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:20px">What the court can reach</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px 32px">
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">The marital home and other real property</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Retirement accounts and pensions</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Property owned before the marriage</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Inherited and gifted assets</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Business interests and their valuation</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:12px;font-size:15px;color:rgba(255,255,255,.85)">Deferred and executive compensation</div>
+</div>
+</div>
+
+<h2 id="s3" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">03 &nbsp;What the court weighs</h2>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Section 46b-81 sets out the factors: the length of the marriage, the causes of the dissolution, the age, health, station, occupation, amount and sources of income, earning capacity, vocational skills, education, employability, estate, liabilities and needs of each party, and the opportunity of each for future acquisition of assets and income. The court also weighs each party's contribution to the acquisition, preservation or appreciation of the estate.</p>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Fault can bear on those factors without dictating the result. Alimony is a separate question again, governed by C.G.S. &#167;46b-82 &#8212; and Connecticut has no alimony formula at all, which is a source of a great deal of misplaced confidence on both sides of a case.</p>
+
+<h2 id="s4" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">04 &nbsp;What you can do about it</h2>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Before a marriage, a prenuptial agreement under the Connecticut Premarital Agreement Act is the direct answer to the all-property rule. After one, a postnuptial agreement is possible too, though Connecticut recognizes those by case law rather than statute and applies a stricter fair-and-equitable standard.</p>
+<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Inside a dissolution, the work is evidentiary: establishing what an asset is, where it came from, whether it was kept separate, and what each party actually contributed. That is done with documents, not adjectives, which is why the financial affidavit is the center of a Connecticut case.</p>
 
 <div data-rise="1" style="position:relative;overflow:hidden;aspect-ratio:3/2;margin:clamp(36px,5.6vh,56px) 0">
 <img src="assets/img/newspaper.jpeg" alt="A folded newspaper on a stone surface" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
 </div>
-<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(6,9,15,.5);margin:-32px 0 clamp(36px,5.6vh,56px)">Fig. 04 &#183; Interim arrangements are temporary, not neutral.</div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(6,9,15,.5);margin:-32px 0 clamp(36px,5.6vh,56px)">Fig. 04 &#183; Hartford Judicial District, 90 Washington Street &#8212; where Glastonbury family cases are heard.</div>
 
-<h2 id="s4" data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;margin:clamp(40px,6vh,64px) 0 20px;scroll-margin-top:120px">04 &nbsp;What happens next</h2>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">Once disclosure is exchanged and the pool is established, most matters move to negotiation or mediation. A minority proceed to litigation. Either way the preparation is the same, which is why it is done properly at the start rather than in response to a court date.</p>
-<p data-rise="1" style="font-size:17px;line-height:1.8;color:rgba(6,9,15,.8);margin:0 0 20px">The measure of a well-run matter is not how hard it was fought. It is whether you understood every decision at the time you made it.</p>
+
 
 <div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);margin-top:clamp(40px,6vh,64px);padding-top:24px">
-<p style="font-size:12px;line-height:1.7;color:rgba(6,9,15,.5);margin:0;max-width:64ch">This article is general information about legal process. It is not legal advice, it does not create a solicitor-client relationship, and it should not be relied on in place of advice about your own circumstances.</p>
+<p style="font-size:12px;line-height:1.7;color:rgba(6,9,15,.5);margin:0;max-width:64ch">This post is general legal information, not legal advice, and does not create an attorney-client relationship. Laws change and outcomes depend on specific facts; consult a licensed Connecticut attorney about your situation.</p>
 </div>
 </div>
 </div>
@@ -123,17 +143,17 @@ a:focus-visible,button:focus-visible{outline:2px solid #F2B632;outline-offset:3p
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3vw,48px)">
 <a data-article="1" data-cursor="read" href="article.html" style="display:block;color:#FFFFFF">
 <div style="position:relative;overflow:hidden;aspect-ratio:4/3;margin-bottom:22px"><img src="assets/img/interview-room.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)"></div>
-<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:14px">Criminal Law &#183; 5 Min</div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">What to do when facing a criminal charge</h3>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:14px">Divorce &#183; 6 Min</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">Can a Connecticut court really divide my inheritance?</h3>
 </a>
 <a data-article="1" data-cursor="read" href="article.html" style="display:block;color:#FFFFFF">
 <div style="position:relative;overflow:hidden;aspect-ratio:4/3;margin-bottom:22px"><img src="assets/img/insight-folders.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)"></div>
-<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:14px">Family Law &#183; 6 Min</div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">Disclosure obligations, and what happens when they are ignored</h3>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:14px">Prenuptial &amp; Postnuptial &#183; 6 Min</div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.8vw,26px);line-height:1.05;letter-spacing:-.025em;text-transform:uppercase;margin:0;max-width:22ch">Do you need a prenup in Connecticut? Five situations where the answer is yes</h3>
 </a>
 <div data-rise="1" style="display:flex;flex-direction:column;justify-content:flex-end;border-top:1px solid rgba(255,255,255,.16);padding-top:24px">
 <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0 0 20px;max-width:30ch">If this describes your situation, the next step is a conversation rather than more reading.</p>
-<a href="contact.html" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632;border-bottom:1px solid rgba(242,182,50,.5);padding-bottom:8px;align-self:flex-start">Speak With Morton &#8594;</a>
+<a href="contact.html" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632;border-bottom:1px solid rgba(242,182,50,.5);padding-bottom:8px;align-self:flex-start">Request A Consultation &#8594;</a>
 </div>
 </div>
 </div>

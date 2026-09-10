@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morton Modern — Home</title>
+<title>Connecticut Family Law Attorney in Glastonbury — Morton Family and Criminal Law</title>
 <script src="js/components.js"></script>
 <script src="js/support.js"></script>
 <script src="js/morton-ui.js"></script>
@@ -27,6 +27,22 @@ input,textarea{font:inherit}
 .mtn-scroller::-webkit-scrollbar-thumb{background:rgba(242,182,50,.5)}
 @keyframes mtnScroll{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(20px);opacity:0}}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+/* --- narrow screens: collapse the fixed multi-column grids --- */
+@media (max-width: 760px){
+  [style*="grid-template-columns:minmax(0,"],
+  [style*="grid-template-columns: minmax(0,"],
+  [style*="grid-template-columns:minmax(0px,"],
+  [style*="grid-template-columns: minmax(0px,"],
+  [style*="grid-template-columns:clamp("],
+  [style*="grid-template-columns: clamp("]{grid-template-columns:minmax(0,1fr) !important}
+  [style*="columns:2 "],[style*="columns: 2 "]{columns:1 !important}
+  nav[aria-label="Primary"]{display:none !important}
+  [data-desknav]{display:none !important}
+  [data-burger]{display:flex !important}
+  body{overflow-wrap:break-word}
+}
+}
 </style>
 </helmet>
 <div style="background:#06090F;color:#FFFFFF;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
@@ -38,15 +54,16 @@ input,textarea{font:inherit}
 <div style="padding-bottom:clamp(24px,5vh,56px)">
 <div data-rise="1" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
 <span style="width:36px;height:1px;background:#F2B632;flex:none"></span>
-<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">The Modern Law Firm</span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">Connecticut Family Law &#183; Glastonbury</span>
 </div>
-<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(56px,11.5vw,184px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,44px);color:#FFFFFF">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Legal</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Moves</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Fast.</span></span>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,6.6vw,138px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,44px);color:#FFFFFF">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Connecticut</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Family</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Law.</span></span>
 </h1>
+<p data-rise="1" style="font-size:clamp(16px,1.35vw,21px);line-height:1.6;color:rgba(255,255,255,.72);margin:0 0 clamp(24px,4vh,40px);max-width:46ch">Divorce, custody, support, modification, enforcement and marital agreements &#8212; with a family-violence defense capability alongside them. An office on Main Street in Glastonbury.</p>
 <div data-rise="1" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px">
-<a data-cursor="open" href="#contact" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Start A Conversation <span>&#8594;</span></a>
+<a data-cursor="open" href="#contact" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Request A Consultation <span>&#8594;</span></a>
 <a href="#practice" style="display:inline-flex;align-items:center;gap:12px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#FFFFFF;border-bottom:1px solid rgba(255,255,255,.28);padding:0 2px 9px;transition:border-color .3s ease" style-hover="color:#F2B632;border-color:#F2B632">Explore Practice Areas</a>
 </div>
 </div>
@@ -59,10 +76,10 @@ input,textarea{font:inherit}
 <div style="position:relative;border-top:1px solid rgba(255,255,255,.1);margin-top:clamp(20px,4vh,40px)">
 <div style="max-width:1600px;margin:0 auto;padding:18px clamp(18px,3vw,48px);display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between">
 <div style="display:flex;flex-wrap:wrap;gap:16px 40px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)">
-<span style="color:#FFFFFF">Family &amp; Criminal Law</span>
-<span>Matter 01 / Family</span>
-<span>Matter 02 / Criminal</span>
-<span>[City] &#183; [Jurisdiction]</span>
+<span style="color:#FFFFFF">Morton Family and Criminal Law, PLLC</span>
+<span>Seven practice areas</span>
+<span>Hartford Judicial District</span>
+<span>G.A. 12 Manchester</span>
 </div>
 <div style="display:flex;align-items:center;gap:10px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6)">
 <span>Scroll</span>
@@ -76,10 +93,10 @@ input,textarea{font:inherit}
 <div style="max-width:1600px;margin:0 auto;padding:clamp(90px,18vh,220px) clamp(18px,3vw,48px)">
 <div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(28px,5vh,56px)">Statement</div>
 <h2 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(34px,7.4vw,124px);line-height:.94;letter-spacing:-.04em;text-transform:uppercase;margin:0;max-width:20ch">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">The legal system</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">is complex.</span></span>
-<span data-mask="1" style="display:block;overflow:hidden;margin-top:.34em"><span style="display:block">Your advice</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">shouldn't be.</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">Most of what you</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;color:rgba(255,255,255,.42)">have read about divorce</span></span>
+<span data-mask="1" style="display:block;overflow:hidden;margin-top:.34em"><span style="display:block">describes</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">another state.</span></span>
 </h2>
 </div>
 </section>
@@ -90,7 +107,7 @@ input,textarea{font:inherit}
 <div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">01 / Practice Areas</div>
 <h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,8.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0">Practice<br>Areas.</h2>
 </div>
-<p data-rise="1" style="font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:rgba(255,255,255,.6);margin:0;max-width:34ch">Two disciplines. One standard of preparation. Select a matter to see how we work.</p>
+<p data-rise="1" style="font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:rgba(255,255,255,.6);margin:0;max-width:34ch">Seven practice areas, each a hub for its own service pages. Six on the family side, one criminal &#8212; limited to family-violence matters.</p>
 </div>
 
 <div data-index="1" style="position:relative;border-top:1px solid rgba(255,255,255,.14)">
@@ -100,19 +117,7 @@ input,textarea{font:inherit}
 <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,9,15,.94) 0%,rgba(6,9,15,.78) 45%,rgba(6,9,15,.55) 100%)"></div>
 </div>
 
-<a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(30px,6vh,64px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease">
-<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">01</span>
-<span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,5.4vw,84px);line-height:.94;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Family Law</span>
-<span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Protecting people.<br>Protecting what matters.</span>
-<span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span>
-</a>
-
-<a data-row="1" data-bgkey="2" data-cursor="explore" href="criminal-law.html" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(30px,6vh,64px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease">
-<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">02</span>
-<span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(30px,5.4vw,84px);line-height:.94;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Criminal Law</span>
-<span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Defending your position.<br>Protecting your future.</span>
-<span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span>
-</a>
+<a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html#divorce" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">01</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Divorce</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Equitable division, not equal.<br>No alimony formula.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a><a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html#custody" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">02</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Custody &amp; Visitation</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Decision-making and the schedule<br>are decided separately.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a><a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html#child-support" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">03</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Child Support</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Income shares, plus the<br>college support order.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a><a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html#modification" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">04</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Modification</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">The order stands until<br>the court changes it.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a><a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html#enforcement" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">05</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Enforcement &amp; Contempt</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">For the parent owed<br>and the parent served.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a><a data-row="1" data-bgkey="1" data-cursor="explore" href="family-law.html#marital-agreements" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">06</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Prenuptial &amp; Postnuptial Agreements</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">The answer to the<br>all-property rule.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a><a data-row="1" data-bgkey="2" data-cursor="explore" href="criminal-law.html" style="position:relative;display:grid;grid-template-columns:clamp(48px,7vw,120px) minmax(0,1fr) minmax(0,.62fr) auto;gap:clamp(14px,2.5vw,44px);align-items:center;padding:clamp(18px,3.4vh,40px) clamp(18px,3vw,48px);border-bottom:1px solid rgba(255,255,255,.14);max-width:1600px;margin:0 auto;transition:color .3s ease"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#F2B632">07</span><span data-rowtitle="1" style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.8vw,58px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;transition:transform .5s cubic-bezier(.2,.7,.2,1)">Domestic Violence (Criminal)</span><span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.62)">Family violence only.<br>Arraigned at G.A. 12.</span><span data-arrow="1" style="font-family:'Archivo',sans-serif;font-size:22px;color:#F2B632;transition:transform .45s cubic-bezier(.2,.7,.2,1);justify-self:end">&#8594;</span></a>
 </div>
 </section>
 
@@ -122,58 +127,28 @@ input,textarea{font:inherit}
 <div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">02 / Approach</div>
 <h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,8.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0">The<br>Morton<br>Method.</h2>
 </div>
-<div data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,1.7vw,26px);line-height:1.35;letter-spacing:-.01em;max-width:22ch">Clear thinking.<br>Strategic advice.<br>Decisive action.</div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,1.7vw,26px);line-height:1.35;letter-spacing:-.01em;max-width:22ch">Connecticut procedure,<br>explained before<br>it happens to you.</div>
 </div>
-<div class="mtn-scroller" style="overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:clamp(18px,3vw,48px);padding-bottom:clamp(60px,10vh,120px)">
-<div style="display:flex;min-width:min-content;padding:0 clamp(18px,3vw,48px);gap:0">
-<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) clamp(20px,2.4vw,40px) 0 0">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span><span data-line="1" style="height:1px;flex:1;background:rgba(6,9,15,.24);transform-origin:left"></span></div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">01</div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Understand</h3>
-<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">A full picture of the facts, the risk, and the outcome you actually need.</p>
-</div>
-<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) clamp(20px,2.4vw,40px) 0 0">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span><span data-line="1" style="height:1px;flex:1;background:rgba(6,9,15,.24);transform-origin:left"></span></div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">02</div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Strategise</h3>
-<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">Options mapped against cost, time, and consequence before anything is filed.</p>
-</div>
-<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) clamp(20px,2.4vw,40px) 0 0">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span><span data-line="1" style="height:1px;flex:1;background:rgba(6,9,15,.24);transform-origin:left"></span></div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">03</div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Act</h3>
-<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">Negotiation or advocacy, run to a plan and with counsel briefed early.</p>
-</div>
-<div style="scroll-snap-align:start;flex:0 0 clamp(280px,31vw,420px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(24px,4vh,40px) 0 0 0">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(28px,5vh,56px)"><span style="width:9px;height:9px;background:#F2B632;flex:none"></span></div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(46px,5vw,76px);line-height:1;letter-spacing:-.04em;color:rgba(6,9,15,.16);margin-bottom:18px">04</div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(22px,2.1vw,32px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 14px">Resolve</h3>
-<p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0;max-width:30ch">The strongest available outcome, and a clear account of how it was reached.</p>
-</div>
-</div>
-</div>
+<div class="mtn-scroller" style="overflow-x:auto;-webkit-overflow-scrolling:touch"><div style="display:flex;gap:clamp(24px,3vw,56px);max-width:1600px;margin:0 auto;padding:0 clamp(18px,3vw,48px) clamp(60px,10vh,120px)"><div style="flex:none;width:clamp(230px,25vw,320px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="display:block;width:7px;height:7px;background:#8A6410;flex:none"></span><span data-line="1" style="display:block;height:1px;background:rgba(6,9,15,.2);flex:1"></span></div><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:12px">01</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Consultation</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0">Your position, the assets, the children, and the range of realistic outcomes. A conflict check runs first.</p></div><div style="flex:none;width:clamp(230px,25vw,320px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="display:block;width:7px;height:7px;background:#8A6410;flex:none"></span><span data-line="1" style="display:block;height:1px;background:rgba(6,9,15,.2);flex:1"></span></div><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:12px">02</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Automatic orders</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0">From the moment a dissolution is filed, P.B. &#167;25-5 restricts transfers, travel with children and insurance changes for both parties.</p></div><div style="flex:none;width:clamp(230px,25vw,320px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="display:block;width:7px;height:7px;background:#8A6410;flex:none"></span><span data-line="1" style="display:block;height:1px;background:rgba(6,9,15,.2);flex:1"></span></div><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:12px">03</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Financial affidavit</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0">Connecticut runs on the sworn affidavit. Incomplete disclosure is the most common cause of delay and cost.</p></div><div style="flex:none;width:clamp(230px,25vw,320px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="display:block;width:7px;height:7px;background:#8A6410;flex:none"></span><span data-line="1" style="display:block;height:1px;background:rgba(6,9,15,.2);flex:1"></span></div><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:12px">04</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Family Services</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0">Mediation and, where ordered, a family relations study. Most matters resolve at this stage.</p></div><div style="flex:none;width:clamp(230px,25vw,320px);border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="display:block;width:7px;height:7px;background:#8A6410;flex:none"></span><span data-line="1" style="display:block;height:1px;background:rgba(6,9,15,.2);flex:1"></span></div><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#8A6410;margin-bottom:12px">05</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Judgment</h3><p style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.68);margin:0">Where agreement is not possible, the case is heard at 90 Washington Street in Hartford.</p></div></div></div>
 </section>
 
-<section style="position:relative;z-index:2;background:#06090F">
-<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px)">
-<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(32px,6vh,64px)">Why Morton</div>
-<div style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:baseline;margin-bottom:clamp(28px,5vh,52px)">
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,2.6vw,42px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;color:rgba(255,255,255,.34)">Traditional Law</div>
-<div style="font-family:'Archivo',sans-serif;font-size:clamp(11px,1vw,15px);color:rgba(255,255,255,.34);letter-spacing:.1em">VS.</div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,2.6vw,42px);line-height:1;letter-spacing:-.03em;text-transform:uppercase;color:#FFFFFF">Morton</div>
+<section id="connecticut" style="position:relative;z-index:2;background:#0A1424">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(40px,7vh,76px)">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">03 / Connecticut</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(34px,6vw,98px);line-height:.88;letter-spacing:-.045em;text-transform:uppercase;margin:0">Six things<br>Connecticut<br>does differently.</h2>
 </div>
-<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Complex</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Clear</span></div>
-<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Reactive</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Strategic</span></div>
-<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Opaque</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Transparent</span></div>
-<div data-rise="1" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(12px,3vw,56px);align-items:center;border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);padding:clamp(20px,3.4vh,34px) 0"><span style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em;color:rgba(255,255,255,.4)">Slow</span><span style="color:#F2B632;font-size:15px">&#8594;</span><span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,2vw,30px);letter-spacing:-.02em">Decisive</span></div>
-<p data-rise="1" style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.4);margin:clamp(20px,3vh,30px) 0 0;max-width:60ch">Positioning statements describing how this practice works. Not a claim about outcomes.</p>
+<p data-rise="1" style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.6);margin:0;max-width:34ch">Statements of Connecticut law, not claims about outcomes. Statutory references are drawn from the content plan and are confirmed by the attorney at drafting.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:0 clamp(28px,4vw,72px)"><div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632;margin-bottom:16px">01</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">All-property state</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:36ch">A Connecticut court may assign any asset either spouse owns &#8212; including premarital, inherited and gifted property. C.G.S. &#167;46b-81.</p></div><div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632;margin-bottom:16px">02</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">No alimony formula</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:36ch">There is no guideline calculation. The court weighs the statutory factors. C.G.S. &#167;46b-82.</p></div><div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632;margin-bottom:16px">03</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">College support</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:36ch">An educational support order is available, but generally must be sought before the child turns eighteen. C.G.S. &#167;46b-56c.</p></div><div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632;margin-bottom:16px">04</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">The nonadversarial track</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:36ch">A streamlined dissolution for short marriages with no children and limited assets, with strict eligibility. C.G.S. &#167;&#167;46b-44a&#8211;44c.</p></div><div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632;margin-bottom:16px">05</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">Coercive control</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:36ch">Since Jennifer's Law, a pattern of controlling behavior can support a civil restraining order without physical violence. P.A. 21-78.</p></div><div data-rise="1" style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(22px,3.4vh,34px) 0"><div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632;margin-bottom:16px">06</div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(19px,1.7vw,26px);letter-spacing:-.02em;text-transform:uppercase;margin:0 0 12px">No common-law marriage</h3><p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.66);margin:0;max-width:36ch">Living together does not create a marriage in Connecticut, however long the relationship.</p></div></div>
 </div>
 </section>
 
 <section id="people" style="position:relative;z-index:2;background:#0A1424">
 <div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px)">
-<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(24px,4vh,44px)">03 / People</div>
-<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(40px,7.4vw,120px);line-height:.88;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(40px,7vh,80px);max-width:16ch">The people behind the advice.</h2>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(24px,4vh,44px)">04 / Attorney</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(40px,7.4vw,120px);line-height:.88;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(40px,7vh,80px);max-width:16ch">One attorney. Verifiable credentials.</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,2.4vw,40px)">
 <a data-person="1" data-cursor="view" href="profile.html" style="display:block">
 <div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:22px">
@@ -181,36 +156,39 @@ input,textarea{font:inherit}
 <span style="position:absolute;top:14px;left:14px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632">01</span>
 <span data-personbar="1" style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#F2B632;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)"></span>
 </div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">[Name Surname]</div>
-<div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:14px">Principal Solicitor</div>
+<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">Daniel M. Morton</div>
+<div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:14px">Attorney &#183; Founder</div>
 <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px">
 <span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Family Law</span>
-<span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Criminal Law</span>
+<span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Family Violence</span>
 </div>
 <span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632">View Profile &#8594;</span>
 </a>
-<a data-person="1" data-cursor="view" href="profile.html" style="display:block">
-<div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:22px">
-<img src="assets/img/headshot.jpeg" alt="Portrait" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
-<span style="position:absolute;top:14px;left:14px;font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;color:#F2B632">02</span>
-<span data-personbar="1" style="position:absolute;left:0;right:0;bottom:0;height:3px;background:#F2B632;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)"></span>
-</div>
-<div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.9vw,28px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">[Name Surname]</div>
-<div style="font-size:13px;color:rgba(255,255,255,.6);margin-bottom:14px">Senior Associate</div>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px">
-<span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:6px 10px">Family Law</span>
-</div>
-<span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632">View Profile &#8594;</span>
-</a>
+
 <div data-rise="1" style="display:flex;flex-direction:column;justify-content:flex-end;border-top:1px solid rgba(255,255,255,.16);padding-top:24px">
-<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,36px)">Trust Is Earned</div>
-<div style="display:flex;flex-direction:column">
-<div style="border-top:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Admission &#183; jurisdiction and year]</div>
-<div style="border-top:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Professional memberships]</div>
-<div style="border-top:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Accreditations]</div>
-<div style="border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);padding:16px 0;font-size:14px;color:rgba(255,255,255,.72)">[Recognition]</div>
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,36px)">Credentials</div>
+<div><div style="border-top:1px solid rgba(255,255,255,.14);padding:14px 0;font-size:15px;color:rgba(255,255,255,.74)">Connecticut &#183; admitted April 10, 2017</div><div style="border-top:1px solid rgba(255,255,255,.14);padding:14px 0;font-size:15px;color:rgba(255,255,255,.74)">Connecticut Juris No. 438184 &#183; active</div><div style="border-top:1px solid rgba(255,255,255,.14);padding:14px 0;font-size:15px;color:rgba(255,255,255,.74)">Hartford Judicial District &#183; 90 Washington Street</div><div style="border-top:1px solid rgba(255,255,255,.14);padding:14px 0;font-size:15px;color:rgba(255,255,255,.74)">G.A. 12 &#183; 410 Center Street, Manchester</div></div><p style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.4);margin:18px 0 0">Connecticut admission is verifiable through the Judicial Branch attorney lookup. Education and any additional court admissions to be supplied.</p>
 </div>
-<p style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.4);margin:18px 0 0">Placeholders. Supply verified credentials and they replace this list.</p>
+</div>
+</div>
+</section>
+
+
+<section id="service-area" style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(40px,7vh,76px)">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">06 / Service Area</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(36px,6.6vw,110px);line-height:.87;letter-spacing:-.045em;text-transform:uppercase;margin:0">Glastonbury<br>and the towns<br>around it.</h2>
+</div>
+<p data-rise="1" style="font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:rgba(6,9,15,.7);margin:0;max-width:36ch">Connecticut has no county government, so the map that matters is towns plus the courthouses that actually hear the cases.</p>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.9fr);gap:clamp(32px,5vw,80px);align-items:start">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 clamp(28px,4vw,64px)"><div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:10px"><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,23px);letter-spacing:-.02em;text-transform:uppercase;margin:0">Glastonbury</h3><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A6410">Tier 1</span></div><p style="font-size:14px;line-height:1.7;color:rgba(6,9,15,.66);margin:0 0 8px;max-width:38ch">The office of record at 2837-A Main Street. A town of roughly 35,000 whose demographics favor the high-net-worth divorce, marital-agreement and college-support work.</p><div style="font-size:11px;color:rgba(6,9,15,.42)">Town &#183; office location</div></div><div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:10px"><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,23px);letter-spacing:-.02em;text-transform:uppercase;margin:0">Hartford Judicial District</h3><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A6410">Tier 1</span></div><p style="font-size:14px;line-height:1.7;color:rgba(6,9,15,.66);margin:0 0 8px;max-width:38ch">Where every Glastonbury family case is filed and heard &#8212; 90 Washington Street, Hartford. Note that 95 Washington Street, across the street, does not handle family matters.</p><div style="font-size:11px;color:rgba(6,9,15,.42)">Judicial district &#183; family</div></div><div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:10px"><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,23px);letter-spacing:-.02em;text-transform:uppercase;margin:0">Manchester G.A. 12</h3><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A6410">Tier 1</span></div><p style="font-size:14px;line-height:1.7;color:rgba(6,9,15,.66);margin:0 0 8px;max-width:38ch">410 Center Street, Manchester. Serves East Hartford, Glastonbury, Manchester, Marlborough and South Windsor. A Glastonbury family-violence arrest is arraigned here.</p><div style="font-size:11px;color:rgba(6,9,15,.42)">Geographical area &#183; criminal</div></div><div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:10px"><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,23px);letter-spacing:-.02em;text-transform:uppercase;margin:0">East Hartford</h3><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A6410">Tier 2</span></div><p style="font-size:14px;line-height:1.7;color:rgba(6,9,15,.66);margin:0 0 8px;max-width:38ch">Same judicial district and same geographical area as Glastonbury, and the largest population in the cluster.</p><div style="font-size:11px;color:rgba(6,9,15,.42)">Town</div></div><div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:10px"><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,23px);letter-spacing:-.02em;text-transform:uppercase;margin:0">Manchester</h3><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A6410">Tier 2</span></div><p style="font-size:14px;line-height:1.7;color:rgba(6,9,15,.66);margin:0 0 8px;max-width:38ch">Same judicial district and G.A.; pairs naturally with the G.A. 12 courthouse page.</p><div style="font-size:11px;color:rgba(6,9,15,.42)">Town</div></div><div data-rise="1" style="border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3vh,30px) 0"><div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:10px"><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,23px);letter-spacing:-.02em;text-transform:uppercase;margin:0">South Windsor</h3><span style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#8A6410">Tier 2</span></div><p style="font-size:14px;line-height:1.7;color:rgba(6,9,15,.66);margin:0 0 8px;max-width:38ch">Same judicial district and G.A. 12 cluster.</p><div style="font-size:11px;color:rgba(6,9,15,.42)">Town</div></div></div>
+<div data-rise="1" style="background:#06090F;color:#FFFFFF;padding:clamp(24px,4vh,36px)">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:20px">Where cases are heard</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding:16px 0"><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:8px">Family matters</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;margin-bottom:6px">Hartford Judicial District</div><div style="font-size:14px;color:rgba(255,255,255,.7);margin-bottom:6px">90 Washington Street, Hartford</div><p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,.5);margin:0">Every Glastonbury family case is filed and heard here. 95 Washington Street, across the street, does not handle family matters.</p></div><div style="border-top:1px solid rgba(255,255,255,.16);padding:16px 0"><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:8px">Family-violence arraignments</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;margin-bottom:6px">G.A. 12, Manchester</div><div style="font-size:14px;color:rgba(255,255,255,.7);margin-bottom:6px">410 Center Street, Manchester</div><p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,.5);margin:0">Serves East Hartford, Glastonbury, Manchester, Marlborough and South Windsor.</p></div><div style="border-top:1px solid rgba(255,255,255,.16);padding:16px 0"><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:8px">Fully contested custody trials</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;margin-bottom:6px">Regional Family Trial Docket</div><div style="font-size:14px;color:rgba(255,255,255,.7);margin-bottom:6px">Middletown</div><p style="font-size:13px;line-height:1.65;color:rgba(255,255,255,.5);margin:0">Where fully contested custody matters are referred for trial.</p></div>
+<a href="service-area.html" style="display:inline-flex;align-items:center;gap:10px;margin-top:24px;font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#F2B632">Full service area &#8594;</a>
 </div>
 </div>
 </div>
@@ -220,15 +198,15 @@ input,textarea{font:inherit}
 <div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,180px) clamp(18px,3vw,48px)">
 <div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(40px,7vh,80px)">
 <div>
-<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">04 / Insights</div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,40px)">07 / Insights</div>
 <h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(44px,8.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0">Morton<br>Insights.</h2>
 </div>
 <a data-rise="1" href="insights.html" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(6,9,15,.3);padding-bottom:8px;color:#06090F" style-hover="color:#8A6410;border-color:#8A6410">All Insights &#8594;</a>
 </div>
 <a data-article="1" data-cursor="open" href="article.html" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,56px);align-items:end;border-top:1px solid rgba(6,9,15,.2);padding:clamp(28px,5vh,52px) 0;color:#06090F">
 <div>
-<div style="display:flex;gap:16px;align-items:baseline;margin-bottom:clamp(20px,3.4vh,34px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#8A6410">01</span><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(6,9,15,.55)">Family Law &#183; 4 Min</span></div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,58px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0;max-width:20ch">What to expect when beginning a family law matter</h3>
+<div style="display:flex;gap:16px;align-items:baseline;margin-bottom:clamp(20px,3.4vh,34px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#8A6410">01</span><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(6,9,15,.55)">Divorce &#183; Explainer &#183; 5 Min</span></div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,58px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0;max-width:20ch">Is Connecticut a 50/50 divorce state?</h3>
 </div>
 <div style="position:relative;overflow:hidden;aspect-ratio:16/9">
 <img src="assets/img/insight-keys.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
@@ -236,13 +214,26 @@ input,textarea{font:inherit}
 </a>
 <a data-article="1" data-cursor="open" href="article.html" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,56px);align-items:end;border-top:1px solid rgba(6,9,15,.2);border-bottom:1px solid rgba(6,9,15,.2);padding:clamp(28px,5vh,52px) 0;color:#06090F">
 <div>
-<div style="display:flex;gap:16px;align-items:baseline;margin-bottom:clamp(20px,3.4vh,34px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#8A6410">02</span><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(6,9,15,.55)">Criminal Law &#183; 5 Min</span></div>
-<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,58px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0;max-width:20ch">What to do when facing a criminal charge</h3>
+<div style="display:flex;gap:16px;align-items:baseline;margin-bottom:clamp(20px,3.4vh,34px)"><span style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;color:#8A6410">02</span><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(6,9,15,.55)">Domestic Violence &#183; Guide &#183; 7 Min</span></div>
+<h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(24px,3.6vw,58px);line-height:.98;letter-spacing:-.035em;text-transform:uppercase;margin:0;max-width:20ch">Arrested for domestic violence in Connecticut: what happens before your first court date</h3>
 </div>
 <div style="position:relative;overflow:hidden;aspect-ratio:16/9">
 <img src="assets/img/interview-room.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)">
 </div>
 </a>
+</div>
+</section>
+
+
+<section id="faq" style="position:relative;z-index:2;background:#0A1424">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(80px,14vh,170px) clamp(18px,3vw,48px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:clamp(32px,5vw,90px);align-items:start">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,40px)">08 / Questions</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(32px,4.6vw,72px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0 0 20px">Straight<br>answers.</h2>
+<p data-rise="1" style="font-size:15px;line-height:1.7;color:rgba(255,255,255,.6);margin:0 0 20px;max-width:32ch">General information about Connecticut law, not advice about your matter.</p>
+<a data-rise="1" href="faq.html" style="font-family:'Archivo',sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:8px" style-hover="color:#F2B632;border-color:#F2B632">All 38 Questions &#8594;</a>
+</div>
+<div data-rise="1"><details style="border-top:1px solid rgba(255,255,255,.16)"><summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(18px,2.6vh,26px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.4vw,21px);letter-spacing:-.015em;cursor:pointer">Is Connecticut a 50/50 divorce state?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary><p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(18px,2.6vh,26px);max-width:64ch">No. Property is divided equitably, and the court may assign any asset either spouse owns.</p></details><details style="border-top:1px solid rgba(255,255,255,.16)"><summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(18px,2.6vh,26px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.4vw,21px);letter-spacing:-.015em;cursor:pointer">Can the court divide property I owned before the marriage?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary><p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(18px,2.6vh,26px);max-width:64ch">Yes. Connecticut is an all-property state, so premarital, inherited and gifted assets can be reached.</p></details><details style="border-top:1px solid rgba(255,255,255,.16)"><summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(18px,2.6vh,26px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.4vw,21px);letter-spacing:-.015em;cursor:pointer">How long does a divorce take in Connecticut?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary><p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(18px,2.6vh,26px);max-width:64ch">There is a statutory waiting period after the return date, and contested cases run substantially longer.</p></details><details style="border-top:1px solid rgba(255,255,255,.16)"><summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(18px,2.6vh,26px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.4vw,21px);letter-spacing:-.015em;cursor:pointer">Do I need a reason to get divorced in Connecticut?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary><p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(18px,2.6vh,26px);max-width:64ch">No. Irretrievable breakdown is enough. Fault grounds exist but are not required.</p></details><details style="border-top:1px solid rgba(255,255,255,.16)"><summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(18px,2.6vh,26px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.4vw,21px);letter-spacing:-.015em;cursor:pointer">What is a nonadversarial divorce?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary><p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(18px,2.6vh,26px);max-width:64ch">A streamlined Connecticut track for short marriages with no children and limited assets, subject to strict eligibility.</p></details><details style="border-top:1px solid rgba(255,255,255,.16);border-bottom:1px solid rgba(255,255,255,.16)"><summary style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(18px,2.6vh,26px) 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(16px,1.4vw,21px);letter-spacing:-.015em;cursor:pointer">What are the automatic orders?<span data-plus="1" style="color:#F2B632;font-size:20px;transition:transform .3s ease;flex:none">+</span></summary><p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0 0 clamp(18px,2.6vh,26px);max-width:64ch">Court orders binding both spouses from the start of the case, restricting transfers, travel with children and insurance changes.</p></details></div>
 </div>
 </section>
 
@@ -253,8 +244,8 @@ input,textarea{font:inherit}
 <span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">To Talk?</span></span>
 </h2>
 <div data-rise="1" style="display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;margin-bottom:clamp(60px,10vh,120px)">
-<a data-cursor="open" href="#contact-form" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Start A Conversation <span>&#8594;</span></a>
-<a href="#contact" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:9px" style-hover="color:#F2B632;border-color:#F2B632">Call Morton</a>
+<a data-cursor="open" href="#contact-form" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;padding:19px 30px;transition:background .3s ease,transform .3s ease" style-hover="background:#FFFFFF;transform:translateY(-2px)">Request A Consultation <span>&#8594;</span></a>
+<a href="mailto:daniel@mfclegal.com" style="font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:9px" style-hover="color:#F2B632;border-color:#F2B632">daniel@mfclegal.com</a>
 </div>
 <div id="contact-form" style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(32px,5vw,96px);border-top:1px solid rgba(255,255,255,.14);padding-top:clamp(40px,7vh,80px)">
 <div>
@@ -263,19 +254,19 @@ input,textarea{font:inherit}
 <div style="display:flex;flex-direction:column;gap:9px"><label for="f-name" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Name</label><input id="f-name" type="text" autocomplete="name" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none"></div>
 <div style="display:flex;flex-direction:column;gap:9px"><label for="f-email" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Email</label><input id="f-email" type="email" autocomplete="email" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none"></div>
 <div style="display:flex;flex-direction:column;gap:9px"><label for="f-phone" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Phone</label><input id="f-phone" type="tel" autocomplete="tel" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none"></div>
-<div style="display:flex;flex-direction:column;gap:9px"><label for="f-matter" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Matter</label><select id="f-matter" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-family:inherit;font-size:16px;padding:9px 0;outline:none"><option style="color:#06090F">Family law</option><option style="color:#06090F">Criminal law</option><option style="color:#06090F">Not sure yet</option></select></div>
+<div style="display:flex;flex-direction:column;gap:9px"><label for="f-matter" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Matter</label><select id="f-matter" style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-family:inherit;font-size:16px;padding:9px 0;outline:none"><option style="color:#06090F">Divorce</option><option style="color:#06090F">Custody &amp; Visitation</option><option style="color:#06090F">Child Support</option><option style="color:#06090F">Modification</option><option style="color:#06090F">Enforcement &amp; Contempt</option><option style="color:#06090F">Prenuptial &amp; Postnuptial Agreements</option><option style="color:#06090F">Domestic Violence (Criminal)</option><option style="color:#06090F">Not sure yet</option></select></div>
 <div style="display:flex;flex-direction:column;gap:9px;grid-column:1 / -1"><label for="f-msg" style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)">Message</label><textarea id="f-msg" rows="3" placeholder="As much or as little as you want to share." style="background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.24);color:#FFFFFF;font-size:16px;padding:9px 0;outline:none;resize:vertical"></textarea></div>
 <div style="grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;margin-top:14px">
-<button type="submit" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;border:0;padding:19px 30px;cursor:pointer;transition:background .3s ease" style-hover="background:#FFFFFF">Submit Enquiry <span>&#8594;</span></button>
-<p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,.5);margin:0;max-width:36ch">Confidential. Read by a solicitor, not a call centre. No obligation to proceed.</p>
+<div style="grid-column:1 / -1;display:flex;gap:12px;align-items:flex-start;margin-top:22px"><input id="f-tcpa" type="checkbox" style="margin-top:4px;accent-color:#F2B632;width:16px;height:16px;flex:none"><label for="f-tcpa" style="font-size:12px;line-height:1.7;color:rgba(255,255,255,.6)">By providing your phone number and checking this box, you agree that the firm may contact you by phone or text about your inquiry. Consent is not a condition of representation. Message and data rates may apply; reply STOP to opt out.</label></div><div style="grid-column:1 / -1;border-top:1px solid rgba(255,255,255,.16);padding-top:16px;margin-top:18px;margin-bottom:4px"><p style="font-size:12px;line-height:1.75;color:rgba(255,255,255,.6);margin:0;max-width:72ch">Contacting the firm through this website, including by submitting this form, does not create an attorney-client relationship. Please do not send confidential or time-sensitive information until an attorney-client relationship has been established in writing.</p></div><button type="submit" style="display:inline-flex;align-items:center;gap:14px;font-family:'Archivo',sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:#F2B632;color:#06090F;border:0;padding:19px 30px;cursor:pointer;transition:background .3s ease" style-hover="background:#FFFFFF">Submit Inquiry <span>&#8594;</span></button>
+<p style="font-size:12px;line-height:1.6;color:rgba(255,255,255,.5);margin:0;max-width:36ch">Contacting the firm through this website, including by submitting this form, does not create an attorney-client relationship. Please do not send confidential or time-sensitive information until an attorney-client relationship has been established in writing.</p>
 </div>
 </form>
-<div data-sent="1" role="status" style="display:none;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,2vw,30px);letter-spacing:-.02em;text-transform:uppercase;color:#F2B632">Received. We'll be in touch.</div>
+<div data-sent="1" role="status" style="display:none;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,2vw,30px);letter-spacing:-.02em;text-transform:uppercase;color:#F2B632">Received. Attorney Daniel M. Morton will respond within one business day, after a conflict check.</div>
 </div>
 <div style="display:flex;flex-direction:column;gap:clamp(26px,4vh,42px)">
 <div style="position:relative;overflow:hidden;aspect-ratio:4/3"><img src="assets/img/city-night.jpeg" alt="Civic building at night" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
-<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Direct</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.8vw,26px);letter-spacing:-.02em">[Phone number]</div></div>
-<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Office</div><div style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.78)">[Address line 1]<br>[Address line 2]</div></div>
+<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Direct</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(20px,1.8vw,26px);letter-spacing:-.02em">[Phone number pending]</div></div>
+<div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Office</div><div style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.78)">2837-A Main Street<br>Glastonbury, CT 06033</div></div>
 <div><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px">Hours</div><div style="font-size:15px;color:rgba(255,255,255,.78)">By appointment</div></div>
 </div>
 </div>
@@ -284,35 +275,58 @@ input,textarea{font:inherit}
 
 <footer style="position:relative;z-index:2;background:#06090F;border-top:1px solid rgba(255,255,255,.14)">
 <div style="max-width:1600px;margin:0 auto;padding:clamp(48px,8vh,90px) clamp(18px,3vw,48px) clamp(28px,4vh,44px)">
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:36px 48px;margin-bottom:clamp(56px,10vh,110px)">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:36px 48px;margin-bottom:clamp(48px,8vh,90px)">
 <div>
-<img src="assets/logo/morton-lockup.png" alt="Morton" style="height:30px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:16px">
-<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55)">Family and Criminal Law</div>
+<img src="assets/logo/morton-lockup.png" alt="Morton Family and Criminal Law" style="height:30px;width:auto;display:block;filter:brightness(0) invert(1);margin-bottom:16px">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);line-height:1.7">Morton Family and<br>Criminal Law, PLLC</div>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
-<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Navigate</div>
-<a href="family-law.html" style="font-size:14px;color:rgba(255,255,255,.78)">Family law</a>
-<a href="#method" style="font-size:14px;color:rgba(255,255,255,.78)">Approach</a>
-<a href="profile.html" style="font-size:14px;color:rgba(255,255,255,.78)">People</a>
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Practice Areas</div>
+<a href="family-law.html#divorce" style="font-size:14px;color:rgba(255,255,255,.78)">Divorce</a>
+<a href="family-law.html#custody" style="font-size:14px;color:rgba(255,255,255,.78)">Custody &amp; visitation</a>
+<a href="family-law.html#child-support" style="font-size:14px;color:rgba(255,255,255,.78)">Child support</a>
+<a href="family-law.html#modification" style="font-size:14px;color:rgba(255,255,255,.78)">Modification</a>
+<a href="family-law.html#enforcement" style="font-size:14px;color:rgba(255,255,255,.78)">Enforcement &amp; contempt</a>
+<a href="family-law.html#marital-agreements" style="font-size:14px;color:rgba(255,255,255,.78)">Prenuptial &amp; postnuptial</a>
+<a href="criminal-law.html" style="font-size:14px;color:rgba(255,255,255,.78)">Domestic violence</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Firm</div>
+<a href="profile.html" style="font-size:14px;color:rgba(255,255,255,.78)">Attorney Daniel M. Morton</a>
+<a href="service-area.html" style="font-size:14px;color:rgba(255,255,255,.78)">Service area</a>
+<a href="faq.html" style="font-size:14px;color:rgba(255,255,255,.78)">Frequently asked questions</a>
 <a href="insights.html" style="font-size:14px;color:rgba(255,255,255,.78)">Insights</a>
+<a href="contact.html" style="font-size:14px;color:rgba(255,255,255,.78)">Contact</a>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
-<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Contact</div>
-<span style="font-size:14px;color:rgba(255,255,255,.78)">[Phone number]</span>
-<span style="font-size:14px;color:rgba(255,255,255,.78)">[Email address]</span>
-<span style="font-size:14px;color:rgba(255,255,255,.78)">[Address]</span>
+<div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Office</div>
+<span style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.78)">2837-A Main Street<br>Glastonbury, CT 06033</span>
+<a href="mailto:daniel@mfclegal.com" style="font-size:14px;color:rgba(255,255,255,.78)">daniel@mfclegal.com</a>
+<span style="font-size:14px;color:rgba(255,255,255,.78)">[Phone number pending]</span>
+<span style="font-size:11px;line-height:1.6;color:rgba(255,255,255,.38)">A local 860/959 number is being provisioned. It will be published here and used identically in every listing.</span>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px">
 <div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:4px">Legal</div>
-<a href="#contact" style="font-size:14px;color:rgba(255,255,255,.78)">Privacy</a>
-<a href="#contact" style="font-size:14px;color:rgba(255,255,255,.78)">Terms of engagement</a>
-<a href="#contact" style="font-size:14px;color:rgba(255,255,255,.78)">Accessibility</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(255,255,255,.78)">Disclaimer &amp; attorney advertising</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(255,255,255,.78)">Privacy policy</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(255,255,255,.78)">Terms of use</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(255,255,255,.78)">Accessibility statement</a>
+<a href="disclaimer.html" style="font-size:14px;color:rgba(255,255,255,.78)">Cookie policy</a>
 </div>
 </div>
-<div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,7.4vw,132px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin-bottom:clamp(32px,5vh,56px)">Morton.<br><span style="color:rgba(255,255,255,.34)">Serious law.<br>Clear direction.</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:11px;color:rgba(255,255,255,.4)">
-<span>&#169; 2026 Morton. All rights reserved.</span>
-<span style="font-family:'Archivo',sans-serif;letter-spacing:.16em;text-transform:uppercase">Concept &#183; Not legal advice</span>
+
+<div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(28px,6.4vw,116px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin-bottom:clamp(32px,5vh,56px)">Morton.<br><span style="color:rgba(255,255,255,.34)">Glastonbury,<br>Connecticut.</span></div>
+
+<div style="border-top:1px solid rgba(255,255,255,.12);padding-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px 48px;font-size:12px;line-height:1.75;color:rgba(255,255,255,.5)">
+<p style="margin:0"><strong style="color:rgba(255,255,255,.8);font-weight:600">Attorney Daniel M. Morton is responsible for the content of this website.</strong> Admitted in Connecticut since April 10, 2017 &#183; Connecticut Juris No. 438184. The firm offers legal services in Connecticut only.</p>
+<p style="margin:0">The information on this website is provided for general informational purposes only and is not legal advice. Viewing this site or contacting the firm does not create an attorney-client relationship. Prior results do not guarantee a similar outcome.</p>
+<p style="margin:0">The criminal practice is limited to family-violence matters. The firm does not accept general criminal defense.</p>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:22px;font-size:11px;color:rgba(255,255,255,.4)">
+<span>&#169; 2026 Morton Family and Criminal Law, PLLC. All rights reserved.</span>
+<span style="font-family:'Archivo',sans-serif;letter-spacing:.16em;text-transform:uppercase">Attorney Advertising</span>
 </div>
 </div>
 </footer>

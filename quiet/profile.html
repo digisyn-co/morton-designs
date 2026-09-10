@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morton Quiet — Our People</title>
+<title>Daniel M. Morton — Connecticut Family Law Attorney</title>
 <script src="js/components.js"></script>
 <script src="js/support.js"></script>
 <script src="js/morton-quiet-ui.js"></script>
@@ -23,6 +23,22 @@ a:hover{color:#8A6B22}
 a:focus-visible,button:focus-visible{outline:1.5px solid #8A6B22;outline-offset:4px}
 ::selection{background:#C9A24A;color:#080808}
 @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+/* --- narrow screens: collapse the fixed multi-column grids --- */
+@media (max-width: 760px){
+  [style*="grid-template-columns:minmax(0,"],
+  [style*="grid-template-columns: minmax(0,"],
+  [style*="grid-template-columns:minmax(0px,"],
+  [style*="grid-template-columns: minmax(0px,"],
+  [style*="grid-template-columns:clamp("],
+  [style*="grid-template-columns: clamp("]{grid-template-columns:minmax(0,1fr) !important}
+  [style*="columns:2 "],[style*="columns: 2 "]{columns:1 !important}
+  nav[aria-label="Primary"]{display:none !important}
+  [data-desknav]{display:none !important}
+  [data-burger]{display:flex !important}
+  body{overflow-wrap:break-word}
+}
+}
 </style>
 </helmet>
 <div style="background:#F7F5F0;color:#080808;font-family:'Manrope',system-ui,sans-serif;font-weight:300;overflow-x:hidden;position:relative">
@@ -31,13 +47,12 @@ a:focus-visible,button:focus-visible{outline:1.5px solid #8A6B22;outline-offset:
 <section style="position:relative">
 <div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(130px,20vh,220px) clamp(20px,4vw,64px) 0;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(28px,5vw,80px);align-items:end;min-height:min(92vh,900px)">
 <div style="padding-bottom:clamp(32px,7vh,80px)">
-<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);margin-bottom:clamp(28px,6vh,60px)">People &nbsp;&#8212;&nbsp; 01</div>
+<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);margin-bottom:clamp(28px,6vh,60px)">Attorney &nbsp;&#8212;&nbsp; Connecticut Juris No. 438184</div>
 <h1 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(44px,7.6vw,116px);line-height:.98;letter-spacing:-.025em;margin:0 0 clamp(24px,4vh,40px)">
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">[Name</span></span>
-<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block;font-style:italic">Surname]</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Daniel M. Morton</span></span>
 </h1>
-<div data-rise="1" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(8,8,8,.55);margin-bottom:clamp(28px,5vh,48px)">Principal Solicitor &nbsp;&#183;&nbsp; Family Law, Criminal Law</div>
-<p data-rise="1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2vw,30px);line-height:1.45;letter-spacing:-.01em;color:rgba(8,8,8,.82);margin:0 0 clamp(32px,6vh,56px);max-width:30ch">[One sentence on what this solicitor is known for, in their own register.]</p>
+<div data-rise="1" style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(8,8,8,.55);margin-bottom:clamp(28px,5vh,48px)">Attorney &#183; Founder&nbsp; &#183; &nbsp;Connecticut family law &amp; family-violence defense</div>
+<p data-rise="1" style="font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2vw,30px);line-height:1.45;letter-spacing:-.01em;color:rgba(8,8,8,.82);margin:0 0 clamp(32px,6vh,56px);max-width:30ch">A Connecticut practice built around family law, with a limited family-violence defense capability alongside it.</p>
 <div data-rise="1" style="display:flex;flex-wrap:wrap;gap:14px 32px;align-items:center">
 <a href="contact.html" style="display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;background:#0B2047;color:#F7F5F0;padding:19px 32px;transition:background .35s ease" style-hover="background:#080808;color:#F7F5F0">Request A Consultation <span>&#8594;</span></a>
 <a href="#credentials" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid rgba(8,8,8,.25);padding-bottom:7px" style-hover="color:#8A6B22;border-color:#8A6B22">Credentials <span>&#8594;</span></a>
@@ -50,7 +65,7 @@ a:focus-visible,button:focus-visible{outline:1.5px solid #8A6B22;outline-offset:
 </div>
 <div style="border-top:1px solid rgba(8,8,8,.14)">
 <div style="max-width:1560px;margin:0 auto;padding:18px clamp(20px,4vw,64px);display:flex;flex-wrap:wrap;gap:14px 40px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(8,8,8,.5)">
-<span>Admitted [Year]</span><span>[Jurisdiction]</span><span>[Direct line]</span><span>[Email]</span>
+<span>Admitted in Connecticut 4/10/2017</span><span>Juris No. 438184 &#183; active</span><span>2837-A Main Street, Glastonbury</span><span>daniel@mfclegal.com</span>
 </div>
 </div>
 </section>
@@ -59,45 +74,14 @@ a:focus-visible,button:focus-visible{outline:1.5px solid #8A6B22;outline-offset:
 <div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start">
 <div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">01 &nbsp;&#8212;&nbsp; Background</div>
 <div data-rise="1" style="max-width:66ch">
-<p style="font-size:clamp(18px,1.6vw,24px);line-height:1.6;color:#080808;margin:0 0 clamp(28px,5vh,44px)">[Two or three sentences describing where this solicitor practises, the kinds of matters they run, and what clients can expect from working with them.]</p>
-<p style="font-size:16px;line-height:1.9;color:rgba(8,8,8,.7);margin:0 0 22px">[Paragraph on experience: years in practice, the courts appeared in, and the types of matters handled most often.]</p>
-<p style="font-size:16px;line-height:1.9;color:rgba(8,8,8,.7);margin:0 0 22px">[Paragraph on approach: how matters are prepared, how clients are kept informed, and the position taken on negotiation versus contest.]</p>
-<p style="font-size:16px;line-height:1.9;color:rgba(8,8,8,.7);margin:0">[Optional paragraph: teaching, publications, professional service, or community work.]</p>
+<p data-rise="1" style="font-size:clamp(20px,1.9vw,28px);line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 22px;max-width:48ch">Daniel M. Morton has been admitted to practice in Connecticut since April 10, 2017, and founded Morton Family and Criminal Law, PLLC to focus on Connecticut family law &#8212; with a limited family-violence defense capability alongside it.</p><p data-rise="1" style="font-size:16px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 22px;max-width:64ch">The family practice covers divorce, custody and visitation, child support, modification, enforcement and contempt, and prenuptial and postnuptial agreements. Glastonbury family matters are filed and heard in the Hartford Judicial District at 90 Washington Street.</p><p data-rise="1" style="font-size:16px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 22px;max-width:64ch">The criminal side is deliberately narrow: family-violence matters only, arraigned at G.A. 12 on Center Street in Manchester. Running both dockets means seeing how a family violence case and a divorce affect each other, which is the reason the two sit under one roof.</p><p data-rise="1" style="font-size:16px;line-height:1.8;color:rgba(8,8,8,.66);margin:0 0 22px;max-width:64ch">Connecticut admission can be checked independently through the Judicial Branch attorney lookup: Daniel Michael Morton, Juris No. 438184, status active, admitted 4/10/2017.</p><p data-rise="1" style="font-size:13px;line-height:1.8;color:rgba(8,8,8,.5);margin:0 0 22px;max-width:64ch">Bio copy, education, any additional court admissions, and the headshot are still to be supplied by the firm.</p>
 </div>
 </div>
 </section>
 
-<section id="credentials" style="background:#0B2047;color:#F7F5F0">
-<div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start">
-<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(247,245,240,.5);padding-top:.6em">02 &nbsp;&#8212;&nbsp; Credentials</div>
-<div>
-<h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(34px,5.4vw,84px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(40px,7vh,80px)">Trust is earned.</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(28px,4vw,64px)">
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:20px">Admission</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Supreme Court of &hellip;, year]</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[High Court of &hellip;, year]</div><div style="border-top:1px solid rgba(247,245,240,.16);border-bottom:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Practising certificate]</div></div>
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:20px">Education</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Degree, institution, year]</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Degree, institution, year]</div><div style="border-top:1px solid rgba(247,245,240,.16);border-bottom:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Practical legal training]</div></div>
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:20px">Memberships</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Law society]</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Family law section]</div><div style="border-top:1px solid rgba(247,245,240,.16);border-bottom:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Criminal law association]</div></div>
-<div data-rise="1"><div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:20px">Recognition</div><div style="border-top:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Award or listing, year]</div><div style="border-top:1px solid rgba(247,245,240,.16);border-bottom:1px solid rgba(247,245,240,.16);padding:14px 0;font-size:15px;color:rgba(247,245,240,.78)">[Accreditation]</div><p style="font-size:12px;line-height:1.7;color:rgba(247,245,240,.45);margin:18px 0 0">Placeholders. Supply verified credentials and they replace this list.</p></div>
-</div>
-</div>
-</div>
-</section>
+<section id="credentials" style="background:#F7F5F0"><div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px) clamp(96px,18vh,220px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start"><div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">02 &nbsp;&#8212;&nbsp; Credentials</div><div><h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,4.6vw,74px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(40px,7vh,80px);max-width:15ch">Credentials, <span style="font-style:italic">verifiable.</span></h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(28px,4vw,64px)"><div data-rise="1"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,29px);letter-spacing:-.01em;margin:0 0 20px">Admission</h3><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Connecticut &#183; admitted April 10, 2017</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Connecticut Juris No. 438184 &#183; status active</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Verifiable through the Judicial Branch attorney lookup</div><div style="border-top:1px solid rgba(8,8,8,.18)"></div><p style="font-size:12px;line-height:1.7;color:rgba(8,8,8,.45);margin:14px 0 0">Any federal or additional court admissions to be listed are still to be supplied.</p></div><div data-rise="1"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,29px);letter-spacing:-.01em;margin:0 0 20px">Education</h3><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">[Law school, J.D., year]</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">[Undergraduate degree, institution, year]</div><div style="border-top:1px solid rgba(8,8,8,.18)"></div><p style="font-size:12px;line-height:1.7;color:rgba(8,8,8,.45);margin:14px 0 0">To be supplied by the firm.</p></div><div data-rise="1"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,29px);letter-spacing:-.01em;margin:0 0 20px">Practice</h3><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Morton Family and Criminal Law, PLLC</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">2837-A Main Street, Glastonbury, CT 06033</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Connecticut only</div><div style="border-top:1px solid rgba(8,8,8,.18)"></div></div><div data-rise="1"><h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,29px);letter-spacing:-.01em;margin:0 0 20px">Courts</h3><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Hartford Judicial District &#183; 90 Washington Street, Hartford</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">G.A. 12 &#183; 410 Center Street, Manchester</div><div style="border-top:1px solid rgba(8,8,8,.18);padding:13px 0;font-size:14px;line-height:1.6;color:rgba(8,8,8,.66)">Regional Family Trial Docket &#183; Middletown</div><div style="border-top:1px solid rgba(8,8,8,.18)"></div><p style="font-size:12px;line-height:1.7;color:rgba(8,8,8,.45);margin:14px 0 0">Court assignments verified against the Judicial Branch town listings; re-verify before publication.</p></div></div></div></div></section>
 
-<section style="background:#F7F5F0">
-<div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,90px);align-items:center">
-<div>
-<div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);margin-bottom:clamp(28px,5vh,52px)">03 &nbsp;&#8212;&nbsp; Matter Types</div>
-<h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(32px,4.8vw,72px);line-height:1.04;letter-spacing:-.02em;margin:0 0 clamp(32px,6vh,56px);max-width:16ch">Work of this kind.</h2>
-<div style="display:flex;flex-direction:column">
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(16px,2.6vh,24px) 0;display:flex;gap:22px;align-items:baseline"><span style="font-size:10px;letter-spacing:.2em;color:#8A6B22;flex:none">01</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Contested parenting proceedings involving relocation</span></div>
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(16px,2.6vh,24px) 0;display:flex;gap:22px;align-items:baseline"><span style="font-size:10px;letter-spacing:.2em;color:#8A6B22;flex:none">02</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Property settlements including trust and company structures</span></div>
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(16px,2.6vh,24px) 0;display:flex;gap:22px;align-items:baseline"><span style="font-size:10px;letter-spacing:.2em;color:#8A6B22;flex:none">03</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Indictable criminal defence run to trial</span></div>
-<div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);border-bottom:1px solid rgba(8,8,8,.18);padding:clamp(16px,2.6vh,24px) 0;display:flex;gap:22px;align-items:baseline"><span style="font-size:10px;letter-spacing:.2em;color:#8A6B22;flex:none">04</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Contested bail applications and urgent interim relief</span></div>
-</div>
-<p data-rise="1" style="font-size:12px;line-height:1.7;color:rgba(8,8,8,.45);margin:20px 0 0;max-width:54ch">Categories of work, not case results. No outcome is guaranteed and past matters do not predict future ones.</p>
-</div>
-<div data-rise="1" style="position:relative;overflow:hidden;aspect-ratio:4/5;background:#D8D3CA"><img src="assets/img/chambers-desk.jpeg" alt="Desk in chambers" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
-</div>
-</section>
+<section style="background:#F7F5F0"><div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:0 clamp(20px,4vw,64px) clamp(96px,18vh,220px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start"><div data-rise="1" style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(8,8,8,.5);padding-top:.6em">03 &nbsp;&#8212;&nbsp; Matter Types</div><div><h2 data-rise="1" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(30px,4.6vw,74px);line-height:1.02;letter-spacing:-.02em;margin:0 0 clamp(28px,5vh,52px);max-width:15ch">Work of <span style="font-style:italic">this kind.</span></h2><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(14px,2.2vh,22px) 0;display:flex;gap:20px;align-items:baseline"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22;flex:none">01</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Contested and uncontested dissolutions, including the all-property division under C.G.S. &#167;46b-81</span></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(14px,2.2vh,22px) 0;display:flex;gap:20px;align-items:baseline"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22;flex:none">02</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Parenting plans, relocation, and post-judgment custody modification</span></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(14px,2.2vh,22px) 0;display:flex;gap:20px;align-items:baseline"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22;flex:none">03</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Child support under the guidelines, including postmajority educational support</span></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(14px,2.2vh,22px) 0;display:flex;gap:20px;align-items:baseline"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22;flex:none">04</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Motions for contempt and their defense, on both the financial and the access side</span></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(14px,2.2vh,22px) 0;display:flex;gap:20px;align-items:baseline"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22;flex:none">05</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Prenuptial and postnuptial agreements, and challenges to them</span></div><div data-rise="1" style="border-top:1px solid rgba(8,8,8,.18);padding:clamp(14px,2.2vh,22px) 0;display:flex;gap:20px;align-items:baseline"><span style="font-size:10px;letter-spacing:.22em;color:#8A6B22;flex:none">06</span><span style="font-size:16px;line-height:1.7;color:rgba(8,8,8,.8)">Family-violence arraignments, protective orders, and the Family Violence Education Program</span></div><div style="border-top:1px solid rgba(8,8,8,.18)"></div><p style="font-size:12px;line-height:1.7;color:rgba(8,8,8,.45);margin:18px 0 0;max-width:62ch">Categories of work, not case results. The firm does not publish case results, and no outcome is guaranteed. Prior results do not guarantee a similar outcome.</p></div></div></section>
 
 <section style="background:#080808;color:#F7F5F0">
 <div data-collapse="1" style="max-width:1560px;margin:0 auto;padding:clamp(96px,18vh,220px) clamp(20px,4vw,64px);display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:clamp(28px,5vw,80px);align-items:start">
@@ -110,16 +94,16 @@ a:focus-visible,button:focus-visible{outline:1.5px solid #8A6B22;outline-offset:
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(28px,3.4vw,56px)">
 <a data-article="1" href="article.html" style="display:block;color:#F7F5F0">
 <div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:24px;background:#0B2047"><img src="assets/img/insight-keys.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)"></div>
-<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:14px">01 &nbsp;Family Law</div>
-<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,28px);line-height:1.2;margin:0">What happens when you begin a family law matter</h3>
+<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:14px">01 &nbsp;Divorce</div>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,28px);line-height:1.2;margin:0">Is Connecticut a 50/50 divorce state?</h3>
 </a>
 <a data-article="1" href="article.html" style="display:block;color:#F7F5F0">
 <div style="position:relative;overflow:hidden;aspect-ratio:3/4;margin-bottom:24px;background:#0B2047"><img src="assets/img/interview-room.jpeg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)"></div>
-<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:14px">02 &nbsp;Criminal Law</div>
-<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,28px);line-height:1.2;margin:0">What to do when you are facing a charge</h3>
+<div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24A;margin-bottom:14px">02 &nbsp;Domestic Violence</div>
+<h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(21px,1.9vw,28px);line-height:1.2;margin:0">Arrested for domestic violence in Connecticut: what happens before your first court date</h3>
 </a>
 <div data-rise="1" style="display:flex;flex-direction:column;justify-content:flex-end;border-top:1px solid rgba(247,245,240,.2);padding-top:24px">
-<p style="font-size:15px;line-height:1.8;color:rgba(247,245,240,.66);margin:0 0 22px;max-width:28ch">Prefer to talk it through? A first conversation is confidential and carries no obligation.</p>
+<p style="font-size:15px;line-height:1.8;color:rgba(247,245,240,.66);margin:0 0 22px;max-width:28ch">Prefer to talk it through? A first consultation carries no obligation. Contacting the firm does not create an attorney-client relationship.</p>
 <a href="contact.html" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24A;border-bottom:1px solid rgba(201,162,74,.5);padding-bottom:7px;align-self:flex-start">Request A Consultation &#8594;</a>
 </div>
 </div>

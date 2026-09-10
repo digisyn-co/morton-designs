@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Service Area — Morton Family and Criminal Law, Glastonbury CT</title>
+<script src="js/components.js"></script>
+<script src="js/support.js"></script>
+<script src="js/morton-ui.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#06090F;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:#F2B632}
+a:focus-visible,button:focus-visible{outline:2px solid #F2B632;outline-offset:3px}
+::selection{background:#F2B632;color:#06090F}
+summary::-webkit-details-marker{display:none}
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+
+/* --- narrow screens: collapse the fixed multi-column grids --- */
+@media (max-width: 760px){
+  [style*="grid-template-columns:minmax(0,"],
+  [style*="grid-template-columns: minmax(0,"],
+  [style*="grid-template-columns:minmax(0px,"],
+  [style*="grid-template-columns: minmax(0px,"],
+  [style*="grid-template-columns:clamp("],
+  [style*="grid-template-columns: clamp("]{grid-template-columns:minmax(0,1fr) !important}
+  [style*="columns:2 "],[style*="columns: 2 "]{columns:1 !important}
+  nav[aria-label="Primary"]{display:none !important}
+  [data-desknav]{display:none !important}
+  [data-burger]{display:flex !important}
+  body{overflow-wrap:break-word}
+}
+}
+</style>
+</helmet>
+<div style="background:#F4F1EA;color:#06090F;font-family:'Instrument Sans',system-ui,sans-serif;overflow-x:hidden;position:relative">
+<dc-import name="site-header" hint-size="100%,66px"></dc-import>
+<section style="position:relative;z-index:2;background:#06090F;color:#FFFFFF">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(110px,17vh,190px) clamp(18px,3vw,48px) clamp(50px,8vh,90px)">
+<div data-rise="1" style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
+<span style="width:36px;height:1px;background:#F2B632;flex:none"></span>
+<span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632">Service Area</span>
+</div>
+<h1 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(28px,6.6vw,140px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:0 0 clamp(24px,4vh,40px)">
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">Glastonbury</span></span>
+<span data-mask="1" style="display:block;overflow:hidden"><span style="display:block">and around.</span></span>
+</h1>
+<p data-rise="1" style="font-size:clamp(16px,1.35vw,21px);line-height:1.6;color:rgba(255,255,255,.72);margin:0;max-width:56ch">Connecticut has no county government, so the map that matters is towns plus the courthouses that actually hear the cases. The office of record is 2837-A Main Street, Glastonbury, CT 06033.</p>
+</div>
+</section>
+<section style="position:relative;z-index:2;background:#0A1424;color:#FFFFFF">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(70px,12vh,150px) clamp(18px,3vw,48px)">
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(28px,5vh,52px)">01 / Courts</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 clamp(28px,4vw,72px)"><div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(18px,2.6vh,26px) 0"><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:10px">Family matters</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">Hartford Judicial District</div><div style="font-size:15px;color:rgba(255,255,255,.78);margin-bottom:8px">90 Washington Street, Hartford</div><p style="font-size:14px;line-height:1.7;color:rgba(255,255,255,.55);margin:0;max-width:52ch">Every Glastonbury family case is filed and heard here. 95 Washington Street, across the street, does not handle family matters.</p></div><div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(18px,2.6vh,26px) 0"><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:10px">Family-violence arraignments</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">G.A. 12, Manchester</div><div style="font-size:15px;color:rgba(255,255,255,.78);margin-bottom:8px">410 Center Street, Manchester</div><p style="font-size:14px;line-height:1.7;color:rgba(255,255,255,.55);margin:0;max-width:52ch">Serves East Hartford, Glastonbury, Manchester, Marlborough and South Windsor.</p></div><div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(18px,2.6vh,26px) 0"><div style="font-family:'Archivo',sans-serif;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#F2B632;margin-bottom:10px">Fully contested custody trials</div><div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.6vw,24px);letter-spacing:-.02em;text-transform:uppercase;margin-bottom:8px">Regional Family Trial Docket</div><div style="font-size:15px;color:rgba(255,255,255,.78);margin-bottom:8px">Middletown</div><p style="font-size:14px;line-height:1.7;color:rgba(255,255,255,.55);margin:0;max-width:52ch">Where fully contested custody matters are referred for trial.</p></div></div>
+<p style="font-size:13px;line-height:1.7;color:rgba(255,255,255,.45);margin:clamp(28px,4vh,44px) 0 0;max-width:70ch">Court assignments verified against the Connecticut Judicial Branch town listings and C.G.S. &#167;51-344. Re-verify before publishing; assignments do change.</p>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#F4F1EA;color:#06090F">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(70px,12vh,150px) clamp(18px,3vw,48px)">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(36px,6vh,64px)">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:clamp(20px,4vh,36px)">02 / Towns</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(32px,5.4vw,88px);line-height:.88;letter-spacing:-.045em;text-transform:uppercase;margin:0">Towns and<br>town clusters.</h2>
+</div>
+<p data-rise="1" style="font-size:15px;line-height:1.7;color:rgba(6,9,15,.7);margin:0;max-width:36ch">Where a cluster sits in a different judicial district, the page says so rather than implying otherwise.</p>
+</div>
+<div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 1</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Glastonbury</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town &#183; office location</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/glastonbury</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">The office of record at 2837-A Main Street. A town of roughly 35,000 whose demographics favor the high-net-worth divorce, marital-agreement and college-support work.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 1</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Hartford Judicial District</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Judicial district &#183; family</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/hartford-judicial-district</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Where every Glastonbury family case is filed and heard &#8212; 90 Washington Street, Hartford. Note that 95 Washington Street, across the street, does not handle family matters.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 1</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Manchester G.A. 12</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Geographical area &#183; criminal</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/manchester-ga-12</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">410 Center Street, Manchester. Serves East Hartford, Glastonbury, Manchester, Marlborough and South Windsor. A Glastonbury family-violence arrest is arraigned here.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">East Hartford</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/east-hartford</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Same judicial district and same geographical area as Glastonbury, and the largest population in the cluster.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Manchester</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/manchester</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Same judicial district and G.A.; pairs naturally with the G.A. 12 courthouse page.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">South Windsor</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/south-windsor</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Same judicial district and G.A. 12 cluster.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Marlborough</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/marlborough</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Same judicial district and G.A., but small &#8212; likely folded into a cluster page rather than standing alone.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Wethersfield &#183; Rocky Hill &#183; Newington</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town cluster</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/wethersfield-rocky-hill-newington</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Across the river and a short drive, but in the New Britain Judicial District &#8212; the page says so plainly rather than implying otherwise.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Hebron &#183; Bolton &#183; Andover</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town cluster</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/hebron-bolton-andover</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Tolland Judicial District at Rockville.</p></div><div data-rise="1" style="display:grid;grid-template-columns:clamp(60px,8vw,110px) minmax(0,1fr) minmax(0,1.2fr);gap:clamp(14px,2.4vw,40px);align-items:start;border-top:1px solid rgba(6,9,15,.2);padding:clamp(20px,3.2vh,32px) 0"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8A6410">Tier 2</span><div><h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(18px,1.8vw,28px);letter-spacing:-.025em;text-transform:uppercase;margin:0 0 8px">Portland &#183; Cromwell &#183; East Hampton</h3><div style="font-size:12px;color:rgba(6,9,15,.5)">Town cluster</div><div style="font-size:11px;color:rgba(6,9,15,.4);margin-top:6px;word-break:break-word">/service-area/portland-cromwell-east-hampton</div></div><p style="font-size:15px;line-height:1.75;color:rgba(6,9,15,.7);margin:0">Middlesex Judicial District at Middletown.</p></div>
+<div style="border-top:1px solid rgba(6,9,15,.2)"></div>
+</div>
+</section>
+
+<section style="position:relative;z-index:2;background:#06090F;color:#FFFFFF">
+<div style="max-width:1600px;margin:0 auto;padding:clamp(70px,12vh,150px) clamp(18px,3vw,48px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,90px);align-items:start">
+<div>
+<div data-rise="1" style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#F2B632;margin-bottom:clamp(20px,4vh,36px)">03 / Crossover</div>
+<h2 data-rise="1" style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(30px,4.4vw,68px);line-height:.9;letter-spacing:-.04em;text-transform:uppercase;margin:0 0 20px">Practice<br>&#215; location.</h2>
+<p data-rise="1" style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.66);margin:0;max-width:44ch">Built only where the page carries genuinely local content &#8212; the courthouse, Family Services practice, local context. Without that it reads as a doorway page and risks a ranking penalty.</p>
+</div>
+<div data-rise="1" style="background:#F4F1EA;color:#06090F;padding:clamp(24px,4vh,40px)">
+<div style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A6410;margin-bottom:18px">First set</div>
+<div style="border-top:1px solid rgba(6,9,15,.2);padding:14px 0;display:flex;gap:16px;align-items:baseline"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;color:#8A6410;flex:none">01</span><span style="font-size:15px;color:rgba(6,9,15,.78)">Divorce &#215; Glastonbury</span></div><div style="border-top:1px solid rgba(6,9,15,.2);padding:14px 0;display:flex;gap:16px;align-items:baseline"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;color:#8A6410;flex:none">02</span><span style="font-size:15px;color:rgba(6,9,15,.78)">Child Custody &#215; Glastonbury</span></div><div style="border-top:1px solid rgba(6,9,15,.2);padding:14px 0;display:flex;gap:16px;align-items:baseline"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;color:#8A6410;flex:none">03</span><span style="font-size:15px;color:rgba(6,9,15,.78)">Divorce &#215; East Hartford</span></div><div style="border-top:1px solid rgba(6,9,15,.2);padding:14px 0;display:flex;gap:16px;align-items:baseline"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;color:#8A6410;flex:none">04</span><span style="font-size:15px;color:rgba(6,9,15,.78)">Domestic Violence &#215; Manchester (G.A. 12)</span></div><div style="border-top:1px solid rgba(6,9,15,.2);padding:14px 0;display:flex;gap:16px;align-items:baseline"><span style="font-family:'Archivo',sans-serif;font-size:10px;font-weight:600;letter-spacing:.14em;color:#8A6410;flex:none">05</span><span style="font-size:15px;color:rgba(6,9,15,.78)">Child Support &#215; Hartford Judicial District</span></div>
+<div style="border-top:1px solid rgba(6,9,15,.2)"></div>
+<p style="font-size:13px;line-height:1.7;color:rgba(6,9,15,.6);margin:18px 0 0">A full matrix of seven practice areas across roughly six locations is the ceiling, sequenced by demand rather than built at once.</p>
+</div>
+</div>
+</section>
+<dc-import name="site-footer" hint-size="100%,520px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    Promise.resolve(window.MortonUI).then(m => {
+      this._teardown = m.initMorton({ accent: '#F2B632', gridLines: true, customCursor: true });
+    }).catch(() => {});
+  }
+  componentWillUnmount() { if (this._teardown) this._teardown(); }
+}
+</script>
+</body>
+</html>
